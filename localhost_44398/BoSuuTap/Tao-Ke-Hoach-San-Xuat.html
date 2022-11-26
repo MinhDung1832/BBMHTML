@@ -76,8 +76,8 @@
     }
     .button-page6 {
         font-family: 'SF Pro';
-        width: 320px;
-        height: 40px;
+        width: 240px;
+        height: 48px;
         left: 16px;
         top: 525px;
         border: none;
@@ -233,58 +233,81 @@
 
                 <div class="col-xs-12 col-input-page6">
                     <div class="col-xs-4">
-                        <input name="" id="" class="form-control input-page6" data-live-search="true" placeholder="Nhập mã BST">
+                        <div>Mã lệnh sản xuất</div>
+                        <input name="" id="" class="form-control input-page6" data-live-search="true" placeholder="Hệ thống tự sinh">
                     </div>
                     <div class="col-xs-4">
-                        <input name="" id="" class="form-control input-page6" data-live-search="true" placeholder="Nhập tên BST">
-                    </div>
-                    <div class="col-xs-4">
+                        <div>Bộ sưu tập</div>
                         <select name="" id="" class="form-control selectpicker" data-live-search="true">
-                            <option value="">Chọn gói giải pháp</option>
+                            <option value="">Chọn sản phẩm</option>
                         </select>
+                    </div>
+                    <div class="col-xs-4">
+                        <div>Màu sắc</div>
+                        <input name="" id="" class="form-control input-page6" data-live-search="true">
                     </div>
                 </div>
                 <div class="col-xs-12 col-input-page6">
                     <div class="col-xs-4">
+                        <div>Nhãn hiệu</div>
                         <select name="" id="" class="form-control selectpicker" data-live-search="true">
-                            <option value="">Chọn mùa vụ</option>
+                            <option value="">Nhập tên</option>
                         </select>
                     </div>
                     <div class="col-xs-4">
-                        <select name="" id="" class="form-control selectpicker" data-live-search="true">
-                            <option value="">Chọn giới tính</option>
-                        </select>
+                        <div>Cửa hàng</div>
+                        <input name="" id="" class="form-control input-page6" data-live-search="true">
                     </div>
                     <div class="col-xs-4">
-                        <select name="" id="" class="form-control selectpicker" data-live-search="true">
-                            <option value="">Chọn nhóm tuổi</option>
-                        </select>
+                        <div>Số mẫu</div>
+                        <input name="" id="" class="form-control input-page6" data-live-search="true">
                     </div>
                 </div>
                 <div class="col-xs-12 col-input-page6">
                     <div class="col-xs-4">
+                        <div>Chọn size</div>
                         <select name="" id="" class="form-control selectpicker" data-live-search="true">
-                            <option value="">Chọn nhóm thu nhập</option>
+                            <option value="">Size sản phẩm</option>
                         </select>
                     </div>
                     <div class="col-xs-4">
-                        <input name="" id="" class="form-control input-page6" data-live-search="true" placeholder="Lợi thế nổi bật">
+                        <div>Tổng số lượng</div>
+                        <input name="" id="" class="form-control input-page6" data-live-search="true">
                     </div>
                     <div class="col-xs-4">
-                        <input name="" id="" class="form-control input-page6" data-live-search="true" placeholder="KM truyền thông là gì">
+                        <div>Quy cách</div>
+                        <input name="" id="" class="form-control input-page6" data-live-search="true">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-input-page6">
+                    <div class="col-xs-4">
+                        <div>Chất liệu</div>
+                        <input name="" id="" class="form-control input-page6" data-live-search="true">
+                    </div>
+                    <div class="col-xs-4">
+                        <div>Giá khoán sản phẩm</div>
+                        <input name="" id="" class="form-control input-page6" data-live-search="true">
+                    </div>
+                    <div class="col-xs-4">
+                        <div>Giá khoán nhân công</div>
+                        <input name="" id="" class="form-control input-page6" data-live-search="true">
                     </div>
                 </div>
                 <!-- <div class="col-xs-8 bkackground-uploadfile">
 
                 </div> -->
-                <div class="col-xs-8" style="height: 130px;">
+                <div class="col-xs-6">
+                    <div>Giá khoán nhân công</div>
+                    <textarea name="" class="form-control input-page6" style="width: 651px; height: 92px" data-live-search="true" cols="30" rows="10"></textarea>
+                </div>
+                <div class="col-xs-6" style="height: 40px;">
                     <div class="Upload_img">
                         <input class="form-control" type="hidden" id="imgLink">
-                        <div id="wp_thum_img" onclick="reupimg()" style="position:absolute; text-align:center; width:672px; height:98px;border: 1px dashed rgba(0, 0, 0, 0.38);border-radius: 4px;">
+                        <div id="wp_thum_img" onclick="reupimg()" style="position:absolute; text-align:center; width:472px; height:98px;border: 1px dashed rgba(0, 0, 0, 0.38);border-radius: 4px;">
                             <div class="img_src" style="padding-top: 16px; cursor:pointer">
                                 <img id="thum_img" for="fileUpload" src="../Resource/images/ant-design_cloud-upload-outlined.png" style="width: 40px" />
                                 <div id="upload_theme">
-                                    <p style="">Up ảnh BST/combo</p>
+                                    <p>Up ảnh mô tả</p>
                                 </div>
                             </div>
 
@@ -296,22 +319,11 @@
                         </form>
                     </div>
                 </div>
-                <div class="col-xs-6" style="display: flex;">
-                    <div>
-                        <img src="../Resource/images/upload 1.png" alt="">
-                    </div>
-                    <div>
-                        <div>IMG_2609.png</div>
-                        <div>
-                            <hr style="border: 1px solid #6D96FF; width: 130px">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12" style="padding-top: 40px;">
-                    <div class="col-xs-4" style="padding: 0">
-                        <button class="button-page6">Tạo mới</button>
-                    </div>
-                    <div class="col-xs-4" style="padding: 0">
+                <div class="col-xs-12" style="padding-top: 40px; display:flex">
+                    <div class="col-xs-3"></div>
+                    <div class="col-xs-3"></div>
+                    <div class="col-xs-3"></div>
+                    <div class="col-xs-3" style="padding: 0; justify-content:right">
                         <button class="button-page6" style="background-color: #D2151E;">Lưu BST</button>
                     </div>
                 </div>
