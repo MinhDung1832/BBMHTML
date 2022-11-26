@@ -14,6 +14,7 @@
     <link href="../Resource/assets/vendors/jvectormap/jquery-jvectormap-2.0.3.css" rel="stylesheet" />
     <link href="../Resource/assets/css/main.min.css" rel="stylesheet" />
     <link href="../Resource/assets/css/trang6.css" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
 
     <link href="../Resource/css/site_V2.css" rel="stylesheet" />
 
@@ -43,6 +44,7 @@
     
 </head>
 <style>
+    
     .notiline {
         font-family: 'SF Pro';
         font-style: normal;
@@ -52,21 +54,79 @@
         color: #212121;
         text-decoration: none;
     }
-    .button.btn.dropdown-toggle.btn-default.bs-placeholder{
-        border-radius: 10px;
-    }
 
+    .dropdown.bootstrap-select.form-control.bs3{
+        border-radius: 15px;
+        height: 40px !important;
+    }
     .col-input-page6 {
         padding-bottom: 26px;
+        padding-left: 0px;
     }
 
     .bkackground-uploadfile {
         width: 672px;
-height: 92px;
+        height: 92px;
         border: 1px dashed rgba(0, 0, 0, 0.38);
-border-radius: 4px;
+        border-radius: 4px;
     }
-    
+    .Viewtab .tab button {
+        font-size: 13px;
+        width: auto;
+    }
+    .button-page6 {
+        font-family: 'SF Pro';
+        width: 320px;
+        height: 40px;
+        left: 16px;
+        top: 525px;
+        border: none;
+        border-radius: 8px;
+        background: #D3D3D3;
+        color: #FFFFFF;
+        font-style: normal;
+        font-weight: bold !important;
+        font-size: 16px !important;
+    }
+    button.btn.dropdown-toggle.btn-default.bs-placeholder  {
+        width: 320px !important;
+        height: 40px !important;
+        border-radius: 8px !important;
+    }
+    .modal-title-page6 {
+        font-family: 'SF Pro';
+        font-style: normal;
+        font-weight: bold !important;
+        font-size: 20px !important;
+        line-height: 24px !important;
+        letter-spacing: 0.15px;
+        
+        color: rgba(0, 0, 0, 0.87);
+        padding-bottom: 4px;
+    }
+    .modal-desr-page6 {
+        width: 257px;
+        height: 20px;
+        left: 16px;
+        top: 48px;
+        
+        font-family: 'SF Pro' important;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .filter-option-inner-inner {
+        padding: 4px
+    }
+
+    input.form-control.input-page6 {
+        border-radius: 8px !important;
+        width: 320px !important;
+        height: 40px !important;
+        max-width: none !important;
+    }
 </style>
 <body class="fixed-navbar sidebar-mini">
     <div class="page-wrapper" style="min-height:400px">
@@ -154,120 +214,112 @@ border-radius: 4px;
         <div class="body-content V2boby">
             <div class="content-wrapper">
                 <div class="content_page">
-                    
+                    <button id="myBtn">Open Modal</button>
 
-<style>
-    .Viewtab .tab button {
-        font-size: 13px;
-        width: auto;
-    }
-</style>
+<!-- The Modal -->
+<div id="myModal" class="modal">
 
-<div>
-    <div class="col-12 stretch-card pl-0 pr-0">
-        <div class="card mb-4">
-            <div class="card-body">
-                <div class="table-responsive_2" id="div-content">
+  <!-- Modal content -->
+  <div class="modal-content" style="top: 50% ;transform: translateX(30%) translateY(-55%);">
+    <div class="modal-header" style="border-bottom: none">
+        <div class="modal-top">
+            <div class="modal-title-page6" id="exampleModalLabel">Thêm mới Bộ Sưu Tập</div>
+            <div class="modal-desr-page6">Vui lòng điền đầy đủ thông tin của BST</div>
+        </div>
+      
+        <span class="btn-close" style="font-size: 24px; cursor: pointer" data-dismiss="modal" aria-label="Close">&times;</span>
+    </div>
+    <div class="col-xs-12 modal-body">
 
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" onclick="js_show()"  data-bs-target="#exampleModal">
-                        Launch demo modal
-                      </button>
-                    <div class="modal fade" id="modal-add-product" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-lg "  style="width: 1136px;" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <div class="modal-top">
-                                        <h5 class="modal-title" id="exampleModalLabel">Thêm mới sản phẩm</h5>
-                                        <p class="modal-desr">Sử dụng bộ loc để tìm sản phẩm bạn muốn</p>
-                                    </div>
-                                  
-                                    <span class="btn-close" style="font-size: 24px; cursor: pointer" data-dismiss="modal" aria-label="Close">&times;</span>
-                                </div>
-                                <div class="modal-body">
-            
-                                            <div class="col-xs-12 col-input-page6">
-                                                <div class="col-xs-4">
-                                                    <select name="" id="" class="form-control selectpicker" data-live-search="true">
-                                                        <option value="">Nhập mã BST</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-xs-4">
-                                                    <select name="" id="" class="form-control selectpicker" data-live-search="true">
-                                                        <option value="">Nhập tên BST</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-xs-4">
-                                                    <select name="" id="" class="form-control selectpicker" data-live-search="true">
-                                                        <option value="">Chọn gói giải pháp</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-12 col-input-page6">
-                                                <div class="col-xs-4">
-                                                    <select name="" id="" class="form-control selectpicker" data-live-search="true">
-                                                        <option value="">Chọn mùa vụ</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-xs-4">
-                                                    <select name="" id="" class="form-control selectpicker" data-live-search="true">
-                                                        <option value="">Chọn giới tính</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-xs-4">
-                                                    <select name="" id="" class="form-control selectpicker" data-live-search="true">
-                                                        <option value="">Chọn nhóm tuổi</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-12 col-input-page6">
-                                                <div class="col-xs-4">
-                                                    <select name="" id="" class="form-control selectpicker" data-live-search="true">
-                                                        <option value="">Chọn nhóm thu nhập</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-xs-4">
-                                                    <select name="" id="" class="form-control selectpicker" data-live-search="true">
-                                                        <option value="">Lợi thế nổi bật</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-xs-4">
-                                                    <select name="" id="" class="form-control selectpicker" data-live-search="true">
-                                                        <option value="">KM truyền thông là gì</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <!-- <div class="col-xs-8 bkackground-uploadfile">
+                <div class="col-xs-12 col-input-page6">
+                    <div class="col-xs-4">
+                        <input name="" id="" class="form-control input-page6" data-live-search="true" placeholder="Nhập mã BST">
+                    </div>
+                    <div class="col-xs-4">
+                        <input name="" id="" class="form-control input-page6" data-live-search="true" placeholder="Nhập tên BST">
+                    </div>
+                    <div class="col-xs-4">
+                        <select name="" id="" class="form-control selectpicker" data-live-search="true">
+                            <option value="">Chọn gói giải pháp</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-input-page6">
+                    <div class="col-xs-4">
+                        <select name="" id="" class="form-control selectpicker" data-live-search="true">
+                            <option value="">Chọn mùa vụ</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-4">
+                        <select name="" id="" class="form-control selectpicker" data-live-search="true">
+                            <option value="">Chọn giới tính</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-4">
+                        <select name="" id="" class="form-control selectpicker" data-live-search="true">
+                            <option value="">Chọn nhóm tuổi</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-input-page6">
+                    <div class="col-xs-4">
+                        <select name="" id="" class="form-control selectpicker" data-live-search="true">
+                            <option value="">Chọn nhóm thu nhập</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-4">
+                        <input name="" id="" class="form-control input-page6" data-live-search="true" placeholder="Lợi thế nổi bật">
+                    </div>
+                    <div class="col-xs-4">
+                        <input name="" id="" class="form-control input-page6" data-live-search="true" placeholder="KM truyền thông là gì">
+                    </div>
+                </div>
+                <!-- <div class="col-xs-8 bkackground-uploadfile">
 
-                                            </div> -->
-                                            <div class="col-md-6">
-                                                <div class="Upload_img">
-                                                    <input class="form-control" type="hidden" id="imgLink">
-                                                    <div id="wp_thum_img" onclick="reupimg()" style="width:90%; height:277px;object-fit:contain; border:solid 1px #d3d3d3;background-color:#ffff;text-align:center;margin-top:-247px;margin-left:16px">
-                                                        <div class="img_src" style="">
-                                                            <img id="thum_img" for="fileUpload" src="" />
-                                                            <div id="upload_theme" style="margin-top:15px">
-                                                                <img src="~/Image/add.svg" style="width:20%;margin-top:60px;margin-bottom:10px" />
-                                                                <p style="">Up ảnh BST/combo</p>
-                                                            </div>
-                                                        </div>
-                    
-                                                    </div>
-                                                    <form id="upload" enctype="multipart/form-data" action="@Url.Action("uploadImg", "Po")" method="POST" style="display:none">
-                                                        <input type="file" style="width: 0.1px;height: 0.1px;opacity: 0;overflow: hidden;position: absolute;z-index: -1;" name="fileUpload" id="fileUpload" class="inputfile">
-                    
-                                                        <label class="btn btn-success" for="fileUpload" style="width:100%;margin: 10px 0px;font-size:12px"><i class="fa fa-upload" aria-hidden="true"></i>upload</label>
-                                                    </form>
-                                                </div>
-                                            </div>
+                </div> -->
+                <div class="col-xs-8" style="height: 130px;">
+                    <div class="Upload_img">
+                        <input class="form-control" type="hidden" id="imgLink">
+                        <div id="wp_thum_img" onclick="reupimg()" style="position:absolute; text-align:center; width:672px; height:98px;border: 1px dashed rgba(0, 0, 0, 0.38);border-radius: 4px;">
+                            <div class="img_src" style="padding-top: 16px; cursor:pointer">
+                                <img id="thum_img" for="fileUpload" src="../Resource/images/ant-design_cloud-upload-outlined.png" style="width: 40px" />
+                                <div id="upload_theme">
+                                    <p style="">Up ảnh BST/combo</p>
                                 </div>
                             </div>
+
+                        </div>
+                        <form id="upload" enctype="multipart/form-data" action="@Url.Action("uploadImg", "Po")" method="POST" style="display:none">
+                            <input type="file" style="width: 0.1px;height: 0.1px;opacity: 0;overflow: hidden;position: absolute;z-index: -1;" name="fileUpload" id="fileUpload" class="inputfile">
+
+                            <label class="btn btn-success" for="fileUpload" style="width:100%;margin: 10px 0px;font-size:12px"><i class="fa fa-upload" aria-hidden="true"></i>upload</label>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-xs-6" style="display: flex;">
+                    <div>
+                        <img src="../Resource/images/upload 1.png" alt="">
+                    </div>
+                    <div>
+                        <div>IMG_2609.png</div>
+                        <div>
+                            <hr style="border: 1px solid #6D96FF; width: 130px">
                         </div>
                     </div>
-                    
+                </div>
+                <div class="col-xs-12" style="padding-top: 40px;">
+                    <div class="col-xs-4" style="padding: 0">
+                        <button class="button-page6">Tạo mới</button>
+                    </div>
+                    <div class="col-xs-4" style="padding: 0">
+                        <button class="button-page6" style="background-color: #D2151E;">Lưu BST</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+  </div>
+
+</div>
+<div>
 </div>
 
 
@@ -374,4 +426,68 @@ border-radius: 4px;
         window.open(url, '_blank');
     }
 
+    function UploadFile() {
+        var data = new FormData();
+        var files = $("#fileUpload").get(0).files;
+        if (files.length > 0) {
+            data.append("MyImages", files[0]);
+        }
+        data.append("foldername", 'BTS');
+        $.ajax({
+            url: "/Po/uploadImg",
+            type: "POST",
+            processData: false,
+            contentType: false,
+            data: data,
+            async: true,
+            success: function (data) {
+                console.log(data);
+                console.log(data.link);
+                if (data.code == 1) {
+                    img_link = data.link;
+                    $('#imgLink').val(data.link);
+                    $('#upload_theme').hide();
+                    $('#thum_img').show();
+                    $('#thum_img').css({ "width": "100%", "margin": "-1px", "object-fit": "contain", "height": "277px" });
+                    $('#thum_img').attr("src", data.link);
+
+                }
+                else {
+                    $('#upload_theme').css({ "display": "block" });
+                }
+            },
+            error: function (er) {
+                alert("Thiết bị không hỗ trợ up ảnh từ camera. Chọn file từ bộ nhớ thiết bị!");
+            }
+        });
+    }
+
+    function reupimg() {
+        $("#fileUpload").click();
+    }
+
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+    modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+    modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    }
 </script>
