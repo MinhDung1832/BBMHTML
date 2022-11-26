@@ -89,7 +89,7 @@
         font-size: 16px !important;
     }
     button.btn.dropdown-toggle.btn-default.bs-placeholder  {
-        width: 320px !important;
+        width: 100% !important;
         height: 40px !important;
         border-radius: 8px !important;
     }
@@ -105,12 +105,12 @@
         padding-bottom: 4px;
     }
     .modal-desr-page6 {
-        width: 257px;
+        width: 280px;
         height: 20px;
         left: 16px;
         top: 48px;
-        
-        font-family: 'SF Pro' important;
+        opacity: 0.8;
+        font-family: 'SF Pro';
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -123,8 +123,20 @@
 
     input.form-control.input-page6 {
         border-radius: 8px !important;
-        width: 320px !important;
+        width: 100% !important;
         height: 40px !important;
+        max-width: none !important;
+    }
+
+    .title-input-tkhsx {
+        font-family: 'SF Pro';
+        font-size: 14px;
+        padding-bottom: 6px;
+    }
+    input.form-control {
+        max-width: none !important;
+    }
+    .dropdown.bootstrap-select.form-control.col-md-4.bs3{
         max-width: none !important;
     }
 </style>
@@ -220,7 +232,7 @@
 <div id="myModal" class="modal">
 
   <!-- Modal content -->
-  <div class="modal-content" style="top: 50% ;transform: translateX(30%) translateY(-55%);">
+  <div class="modal-content" style="top: 45% ;transform: translateX(25%) translateY(-50%);">
     <div class="modal-header" style="border-bottom: none">
         <div class="modal-top col-xs-12">
             <div class="modal-title-page6" id="exampleModalLabel">Tạo kế hoạch sản xuất mới</div>
@@ -230,101 +242,100 @@
         <span class="btn-close" style="font-size: 24px; cursor: pointer" data-dismiss="modal" aria-label="Close">&times;</span>
     </div>
     <div class="col-xs-12 modal-body">
-
-                <div class="col-xs-12 col-input-page6">
-                    <div class="col-xs-4">
-                        <div>Mã lệnh sản xuất</div>
+                <div class="col-xs-12">
+                    <div class="col-md-4 col-input-page6">
+                        <div class="title-input-tkhsx">Mã lệnh sản xuất</div>
                         <input name="" id="" class="form-control input-page6" data-live-search="true" placeholder="Hệ thống tự sinh">
                     </div>
-                    <div class="col-xs-4">
-                        <div>Bộ sưu tập</div>
-                        <select name="" id="" class="form-control selectpicker" data-live-search="true">
+                    <div class="col-md-4 col-input-page6">
+                        <div class="title-input-tkhsx">Bộ sưu tập</div>
+                        <select name="" id="" class="form-control selectpicker col-md-4" data-live-search="true">
                             <option value="">Chọn sản phẩm</option>
                         </select>
                     </div>
-                    <div class="col-xs-4">
-                        <div>Màu sắc</div>
-                        <input name="" id="" class="form-control input-page6" data-live-search="true">
+                    <div class="col-md-4 col-input-page6">
+                        <div class="title-input-tkhsx">Màu sắc</div>
+                        <input name="" id="" class="form-control input-page6 col-md-4" data-live-search="true">
                     </div>
                 </div>
                 <div class="col-xs-12 col-input-page6">
-                    <div class="col-xs-4">
-                        <div>Nhãn hiệu</div>
-                        <select name="" id="" class="form-control selectpicker" data-live-search="true">
+                    <div class="col-md-4 col-input-page6">
+                        <div class="title-input-tkhsx">Nhãn hiệu</div>
+                        <select name="" id="" class="form-control selectpicker col-md-4" data-live-search="true">
                             <option value="">Nhập tên</option>
                         </select>
                     </div>
-                    <div class="col-xs-4">
-                        <div>Cửa hàng</div>
-                        <input name="" id="" class="form-control input-page6" data-live-search="true">
+                    <div class="col-md-4 col-input-page6">
+                        <div class="title-input-tkhsx">Cửa hàng</div>
+                        <input name="" id="" class="form-control input-page6 col-md-4" data-live-search="true">
                     </div>
-                    <div class="col-xs-4">
-                        <div>Số mẫu</div>
-                        <input name="" id="" class="form-control input-page6" data-live-search="true">
+                    <div class="col-md-4 col-input-page6">
+                        <div class="title-input-tkhsx">Số mẫu</div>
+                        <input name="" id="" class="form-control input-page6 col-md-4" data-live-search="true">
                     </div>
                 </div>
                 <div class="col-xs-12 col-input-page6">
-                    <div class="col-xs-4">
-                        <div>Chọn size</div>
-                        <select name="" id="" class="form-control selectpicker" data-live-search="true">
+                    <div class="col-md-4 col-input-page6">
+                        <div class="title-input-tkhsx">Chọn size</div>
+                        <select name="" id="" class="form-control selectpicker col-md-4" data-live-search="true">
                             <option value="">Size sản phẩm</option>
                         </select>
                     </div>
-                    <div class="col-xs-4">
-                        <div>Tổng số lượng</div>
-                        <input name="" id="" class="form-control input-page6" data-live-search="true">
+                    <div class="col-md-4 col-input-page6">
+                        <div class="title-input-tkhsx">Tổng số lượng</div>
+                        <input name="" id="" class="form-control input-page6 col-md-4" data-live-search="true">
                     </div>
-                    <div class="col-xs-4">
-                        <div>Quy cách</div>
-                        <input name="" id="" class="form-control input-page6" data-live-search="true">
+                    <div class="col-md-4 col-input-page6">
+                        <div class="title-input-tkhsx">Quy cách</div>
+                        <input name="" id="" class="form-control input-page6 col-md-4" data-live-search="true">
                     </div>
                 </div>
                 <div class="col-xs-12 col-input-page6">
-                    <div class="col-xs-4">
-                        <div>Chất liệu</div>
-                        <input name="" id="" class="form-control input-page6" data-live-search="true">
+                    <div class="col-md-4 col-input-page6">
+                        <div class="title-input-tkhsx">Chất liệu</div>
+                        <input name="" id="" class="form-control input-page6 col-md-4" data-live-search="true">
                     </div>
-                    <div class="col-xs-4">
-                        <div>Giá khoán sản phẩm</div>
-                        <input name="" id="" class="form-control input-page6" data-live-search="true">
+                    <div class="col-md-4 col-input-page6">
+                        <div class="title-input-tkhsx">Giá khoán sản phẩm</div>
+                        <input name="" id="" class="form-control input-page6 col-md-4" data-live-search="true">
                     </div>
-                    <div class="col-xs-4">
-                        <div>Giá khoán nhân công</div>
-                        <input name="" id="" class="form-control input-page6" data-live-search="true">
+                    <div class="col-md-4 col-input-page6">
+                        <div class="title-input-tkhsx">Giá khoán nhân công</div>
+                        <input name="" id="" class="form-control input-page6 col-md-4" data-live-search="true">
                     </div>
                 </div>
-                <!-- <div class="col-xs-8 bkackground-uploadfile">
-
-                </div> -->
-                <div class="col-xs-6">
-                    <div>Giá khoán nhân công</div>
-                    <textarea name="" class="form-control input-page6" style="width: 651px; height: 92px" data-live-search="true" cols="30" rows="10"></textarea>
-                </div>
-                <div class="col-xs-6" style="height: 40px;">
-                    <div class="Upload_img">
-                        <input class="form-control" type="hidden" id="imgLink">
-                        <div id="wp_thum_img" onclick="reupimg()" style="position:absolute; text-align:center; width:472px; height:98px;border: 1px dashed rgba(0, 0, 0, 0.38);border-radius: 4px;">
-                            <div class="img_src" style="padding-top: 16px; cursor:pointer">
-                                <img id="thum_img" for="fileUpload" src="../Resource/images/ant-design_cloud-upload-outlined.png" style="width: 40px" />
-                                <div id="upload_theme">
-                                    <p>Up ảnh mô tả</p>
+                <div class="col-xs-12">
+                    <div class="col-xs-6">
+                        <div class="title-input-tkhsx">Yêu cầu</div>
+                        <textarea name="" class="form-control input-page6 col-md-4" style="width: 651px; height: 92px" data-live-search="true" cols="50" rows="20"></textarea>
+                    </div>
+                    <div class="col-xs-6" style="height: 40px;">
+                        <div class="Upload_img">
+                            <input class="form-control" type="hidden" id="imgLink">
+                            <div id="wp_thum_img" onclick="reupimg()" style="position:absolute; text-align:center; width:500px; height:98px;border: 1px dashed rgba(0, 0, 0, 0.38);border-radius: 4px;">
+                                <div class="img_src" style="padding-top: 16px; cursor:pointer">
+                                    <img id="thum_img" for="fileUpload" src="../Resource/images/ant-design_cloud-upload-outlined.png" style="width: 40px" />
+                                    <div id="upload_theme">
+                                        <p>Up ảnh mô tả</p>
+                                    </div>
                                 </div>
+    
                             </div>
-
+                            <form id="upload" enctype="multipart/form-data" action="@Url.Action("uploadImg", "Po")" method="POST" style="display:none">
+                                <input type="file" style="width: 0.1px;height: 0.1px;opacity: 0;overflow: hidden;position: absolute;z-index: -1;" name="fileUpload" id="fileUpload" class="inputfile">
+    
+                                <label class="btn btn-success" for="fileUpload" style="width:100%;margin: 10px 0px;font-size:12px"><i class="fa fa-upload" aria-hidden="true"></i>upload</label>
+                            </form>
                         </div>
-                        <form id="upload" enctype="multipart/form-data" action="@Url.Action("uploadImg", "Po")" method="POST" style="display:none">
-                            <input type="file" style="width: 0.1px;height: 0.1px;opacity: 0;overflow: hidden;position: absolute;z-index: -1;" name="fileUpload" id="fileUpload" class="inputfile">
-
-                            <label class="btn btn-success" for="fileUpload" style="width:100%;margin: 10px 0px;font-size:12px"><i class="fa fa-upload" aria-hidden="true"></i>upload</label>
-                        </form>
                     </div>
+
                 </div>
-                <div class="col-xs-12" style="padding-top: 40px; display:flex">
+                <div class="col-xs-12" style="padding-top: 80px; display:flex">
                     <div class="col-xs-3"></div>
                     <div class="col-xs-3"></div>
                     <div class="col-xs-3"></div>
                     <div class="col-xs-3" style="padding: 0; justify-content:right">
-                        <button class="button-page6" style="background-color: #D2151E;">Lưu BST</button>
+                        <button class="button-page6" style="background-color: #D2151E;">Tạo mới</button>
                     </div>
                 </div>
             </div>
