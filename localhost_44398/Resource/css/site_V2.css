@@ -11,7 +11,7 @@
 
 @font-face {
     font-family: 'SF Pro';
-    src: url('http://localhost:44398/Resource/Sf Pro/SF-Pro.ttf') format('truetype');
+    src: url('/Resource/font/SF-Pro.ttf') format('truetype');
 }
 
 @font-face {
