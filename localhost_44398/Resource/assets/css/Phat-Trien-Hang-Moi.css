@@ -145,10 +145,6 @@
     cursor: pointer;
   }
 
-  .content-wrapper {
-    background-color: #f3f3f3 !important;
-  }
-
   @media screen and (max-width: 991px) {
     .modal-content-overflow {
       overflow: scroll;
