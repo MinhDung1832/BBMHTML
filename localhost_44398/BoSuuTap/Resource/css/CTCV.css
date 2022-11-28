@@ -1,0 +1,191 @@
+.content-wrapper2 {
+    height: auto;
+    border: 0px solid #f3f3f3;
+    background: #fff;
+    padding: 0 0 0 10px;
+    margin: 20px 27px 0px 85px;
+    border-radius: 10px;
+}
+.content-wrapper1 {
+    min-height: 380px;
+    border: 0px solid #f3f3f3;
+    background: #fff;
+    padding: 0 0 0 10px;
+    margin: 22px 27px 0px 85px;
+    border-radius: 10px;
+}
+
+.layoutBST {
+    margin: 15px 0 0 16px;
+
+}
+.iconinfo{
+    margin: 7px 0 0 0px;
+    padding: 0 0 0 73px;
+}
+.textInfo{
+    font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* or 143% */
+
+
+/* 00. On Surface / Medium Emphasis */
+
+color: rgba(0, 0, 0, 0.6);
+}
+.textcbcv{
+    font-weight: 590;
+font-size: 19px;
+line-height: 24px;
+/* identical to box height, or 120% */
+padding: 4px 0 0 15px;
+letter-spacing: 0.15px;
+
+color: rgba(0, 0, 0, 0.87);
+}
+.TextYeuCau{
+    font-weight: 590;
+font-size: 15px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+
+/* 00. On Surface / High Emphasis */
+
+color: rgba(0, 0, 0, 0.87);
+
+}
+.textMota{
+    font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+
+color: #484848;
+}
+.TitleMadal{
+    font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+/* identical to box height, or 171% */
+
+letter-spacing: 0.15px;
+
+color: rgba(0, 0, 0, 0.87);
+
+
+}
+.titleHinhAnh {
+    font-weight: 590;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+
+
+    /* 00. On Surface / Medium Emphasis */
+
+    color: rgba(0, 0, 0, 0.6);
+
+}
+.textThemCV{
+    font-weight: 590;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height, or 120% */
+
+letter-spacing: 0.15px;
+
+color: rgba(0, 0, 0, 0.87);
+}
+.textTblBST{
+    font-weight: 590;
+font-size: 14px;
+line-height: 20px;
+/* or 143% */
+
+text-transform: uppercase;
+
+/* 00. On Surface / Medium Emphasis */
+
+color: rgba(0, 0, 0, 0.6);
+}
+.textRowTblBST{
+    font-weight: 510;
+font-size: 16px;
+line-height: 23px;
+color: #000000;
+}
+.table > tbody > tr > td {
+    color: #000000 !important;
+    font-size: 14px !important;
+    vertical-align: middle;
+}
+.cardTbl{
+    background-color: white;
+    border: 1px solid rgba(155, 155, 155, 0.38);
+    border-radius: 8px;
+    margin: 20px 22px 20px 10px;
+}
+.card {
+    width: 1371px;
+    height: auto;
+    background: rgba(33, 33, 33, 0.08);
+    margin:15px 0 0 0;
+    border: 1px solid rgba(0, 0, 0, 0.38);
+    border-radius: 8px;
+}
+
+.TitleBST {
+    font-weight: 590;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.TitleName {
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 590;
+    font-size: 13px;
+    line-height: 25px;
+}
+/* .formSelect{
+    border-radius: 5px;
+   border: 2px solid #DDDDDD;
+   display: inline;
+   top: 5px;
+   left: 5px;
+   position: relative;
+} */
+.form-control{
+    border-radius: 4px;
+}
+
+.TitleText {
+    font-weight: 510;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.textStatus {
+
+    font-size: 13px;
+    width: 120px;
+    height: 30px;
+    font-weight: 400;
+    line-height: 21px;
+    background-color: rgba(249, 168, 37, 0.2);
+    color: #F9A825;
+    border-radius: 20px;
+}
+.textStatus1 {
+
+    font-size: 13px;
+    width: 120px;
+    height: 30px;
+    font-weight: 400;
+    line-height: 21px;
+    background: rgba(0, 0, 0, 0.12);
+    color: rgba(0, 0, 0, 0.6);;
+    border-radius: 20px;
+}
