@@ -292,6 +292,7 @@
     -webkit-align-items: center;
     align-items: center;
   }
+
   .header-pthm.swiper.swiper-initialized.swiper-horizontal.swiper-pointer-events.swiper-backface-hidden {
     background-color: #f3f3f3;
     width: auto;
@@ -299,15 +300,15 @@
     margin: 20px 30px 20px 86px;
     display: flex;
   }
+
   button.btn.dropdown-toggle.btn-default.bs-placeholder {
     border: none !important
   }
+
   button.btn.dropdown-toggle.btn-default.bs-placeholder:hover {
     background-color: #fff !important
   }
-  .div-md-2{
-    margin-right: 36px;
-  }
+
   @media screen and (max-width: 991px) {
     .modal-content-overflow {
       overflow: scroll;
