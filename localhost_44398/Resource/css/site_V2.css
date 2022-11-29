@@ -1,7 +1,7 @@
 ﻿/* 755 of 4440 unused characters has been removed. */
 @font-face {
     font-family: 'Rift';
-    src: url('http://localhost:44398/Resource/Rift_2/Fort Foundry - Rift-Bold.otf') format('opentype'),url('http://localhost:44398/Resource/Rift_2/Fort Foundry - Rift-Demi.otf') format('opentype'),url('http://localhost:44398/Resource/Rift_2/Fort Foundry - Rift-Light.otf') format('opentype'),url('http://localhost:44398/Resource/Rift_2/Fort Foundry - Rift-Medium.otf') format('opentype'),url('http://localhost:44398/Resource/Rift_2/Fort Foundry - Rift-Regular.otf') format('opentype'),url('http://localhost:44398/Resource/Rift_2/Fort Foundry - Rift Bold Italic.otf') format('opentype'),url('http://localhost:44398/Resource/Rift_2/Fort Foundry - Rift Demi Italic.otf') format('opentype'),url('http://localhost:44398/Resource/Rift_2/Fort Foundry - Rift Italic.otf') format('opentype'),url('http://localhost:44398/Resource/Rift_2/Fort Foundry - Rift Light Italic.otf') format('opentype'),url('http://localhost:44398/Resource/Rift_2/Fort Foundry - Rift Medium Italic.otf') format('opentype'),url('http://localhost:44398/Resource/Rift_2/Fort Foundry - Rift Soft Bold Italic.otf') format('opentype'),url('http://localhost:44398/Resource/Rift_2/Fort Foundry - Rift Soft Demi Italic.otf') format('opentype'),url('http://localhost:44398/Resource/Rift_2/Fort Foundry - Rift Soft Italic.otf') format('opentype'),url('http://localhost:44398/Resource/Rift_2/Fort Foundry - Rift Soft Light Italic.otf') format('opentype'),url('http://localhost:44398/Resource/Rift_2/Fort Foundry - Rift Soft Medium Italic.otf') format('opentype'),url('http://localhost:44398/Resource/Rift_2/Fort Foundry - RiftSoft-Bold.otf') format('opentype'),url('http://localhost:44398/Resource/Rift_2/Fort Foundry - RiftSoft-Demi.otf') format('opentype'),url('http://localhost:44398/Resource/Rift_2/Fort Foundry - RiftSoft-Light.otf') format('opentype'),url('http://localhost:44398/Resource/Rift_2/Fort Foundry - RiftSoft-Medium.otf') format('opentype'),url('http://localhost:44398/Resource/Rift_2/Fort Foundry - RiftSoft-Regular.otf') format('opentype')
+    src: url('http://localhost:44398/Resource/Rift_2/Fort Foundry - Rift-Bold.otf') format('opentype'), url('http://localhost:44398/Resource/Rift_2/Fort Foundry - Rift-Demi.otf') format('opentype'), url('http://localhost:44398/Resource/Rift_2/Fort Foundry - Rift-Light.otf') format('opentype'), url('http://localhost:44398/Resource/Rift_2/Fort Foundry - Rift-Medium.otf') format('opentype'), url('http://localhost:44398/Resource/Rift_2/Fort Foundry - Rift-Regular.otf') format('opentype'), url('http://localhost:44398/Resource/Rift_2/Fort Foundry - Rift Bold Italic.otf') format('opentype'), url('http://localhost:44398/Resource/Rift_2/Fort Foundry - Rift Demi Italic.otf') format('opentype'), url('http://localhost:44398/Resource/Rift_2/Fort Foundry - Rift Italic.otf') format('opentype'), url('http://localhost:44398/Resource/Rift_2/Fort Foundry - Rift Light Italic.otf') format('opentype'), url('http://localhost:44398/Resource/Rift_2/Fort Foundry - Rift Medium Italic.otf') format('opentype'), url('http://localhost:44398/Resource/Rift_2/Fort Foundry - Rift Soft Bold Italic.otf') format('opentype'), url('http://localhost:44398/Resource/Rift_2/Fort Foundry - Rift Soft Demi Italic.otf') format('opentype'), url('http://localhost:44398/Resource/Rift_2/Fort Foundry - Rift Soft Italic.otf') format('opentype'), url('http://localhost:44398/Resource/Rift_2/Fort Foundry - Rift Soft Light Italic.otf') format('opentype'), url('http://localhost:44398/Resource/Rift_2/Fort Foundry - Rift Soft Medium Italic.otf') format('opentype'), url('http://localhost:44398/Resource/Rift_2/Fort Foundry - RiftSoft-Bold.otf') format('opentype'), url('http://localhost:44398/Resource/Rift_2/Fort Foundry - RiftSoft-Demi.otf') format('opentype'), url('http://localhost:44398/Resource/Rift_2/Fort Foundry - RiftSoft-Light.otf') format('opentype'), url('http://localhost:44398/Resource/Rift_2/Fort Foundry - RiftSoft-Medium.otf') format('opentype'), url('http://localhost:44398/Resource/Rift_2/Fort Foundry - RiftSoft-Regular.otf') format('opentype')
 }
 
 @font-face {
@@ -51,7 +51,8 @@ body {
     font-family: system-ui;
 }
 
-.dropup .dropdown-menu, .navbar-fixed-bottom .dropdown .dropdown-menu {
+.dropup .dropdown-menu,
+.navbar-fixed-bottom .dropdown .dropdown-menu {
     top: auto;
     bottom: 100%;
     margin-bottom: 2px;
@@ -66,7 +67,8 @@ body {
     box-sizing: border-box;
 }
 
-.dropup .dropdown-menu, .navbar-fixed-bottom .dropdown .dropdown-menu {
+.dropup .dropdown-menu,
+.navbar-fixed-bottom .dropdown .dropdown-menu {
     top: auto;
     bottom: 100%;
     margin-bottom: 2px;
@@ -139,6 +141,7 @@ div#sidebar-collapse a {
 .datedetail {
     width: 130px !important;
 }
+
 /*.table td, .table th {
     padding: 3px !important;
 }*/
@@ -164,64 +167,82 @@ div#sidebar-collapse a {
     border-radius: 50%;
     border: 3px solid transparent;
     border-top-color: #3498db;
-    -webkit-animation: spin 5s linear infinite; /* 2s Chrome, Opera 15+, Safari 5+ */
-    animation: spin 5s linear infinite; /* 2s Chrome, Firefox 16+, IE 10+, Opera */
+    -webkit-animation: spin 5s linear infinite;
+    /* 2s Chrome, Opera 15+, Safari 5+ */
+    animation: spin 5s linear infinite;
+    /* 2s Chrome, Firefox 16+, IE 10+, Opera */
     z-index: 1101;
 }
 
-    .loading-1:before {
-        content: "";
-        position: absolute;
-        top: 5px;
-        left: 5px;
-        right: 5px;
-        bottom: 5px;
-        border-radius: 50%;
-        border: 3px solid transparent;
-        border-top-color: #e74c3c;
-        -webkit-animation: spin 1.5s linear infinite; /* 3s Chrome, Opera 15+, Safari 5+ */
-        animation: spin 1.5s linear infinite; /* 3s Chrome, Firefox 16+, IE 10+, Opera */
-    }
+.loading-1:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #e74c3c;
+    -webkit-animation: spin 1.5s linear infinite;
+    /* 3s Chrome, Opera 15+, Safari 5+ */
+    animation: spin 1.5s linear infinite;
+    /* 3s Chrome, Firefox 16+, IE 10+, Opera */
+}
 
-    .loading-1:after {
-        content: "";
-        position: absolute;
-        top: 15px;
-        left: 15px;
-        right: 15px;
-        bottom: 15px;
-        border-radius: 50%;
-        border: 3px solid transparent;
-        border-top-color: #f9c922;
-        -webkit-animation: spin 0.75s linear infinite; /* 1.5s Chrome, Opera 15+, Safari 5+ */
-        animation: spin 0.75s linear infinite; /* 1.5s Chrome, Firefox 16+, IE 10+, Opera */
-    }
+.loading-1:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #f9c922;
+    -webkit-animation: spin 0.75s linear infinite;
+    /* 1.5s Chrome, Opera 15+, Safari 5+ */
+    animation: spin 0.75s linear infinite;
+    /* 1.5s Chrome, Firefox 16+, IE 10+, Opera */
+}
 
 @-webkit-keyframes spin {
     0% {
-        -webkit-transform: rotate(0deg); /* Chrome, Opera 15+, Safari 3.1+ */
-        -ms-transform: rotate(0deg); /* IE 9 */
-        transform: rotate(0deg); /* Firefox 16+, IE 10+, Opera */
+        -webkit-transform: rotate(0deg);
+        /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);
+        /* IE 9 */
+        transform: rotate(0deg);
+        /* Firefox 16+, IE 10+, Opera */
     }
 
     100% {
-        -webkit-transform: rotate(360deg); /* Chrome, Opera 15+, Safari 3.1+ */
-        -ms-transform: rotate(360deg); /* IE 9 */
-        transform: rotate(360deg); /* Firefox 16+, IE 10+, Opera */
+        -webkit-transform: rotate(360deg);
+        /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);
+        /* IE 9 */
+        transform: rotate(360deg);
+        /* Firefox 16+, IE 10+, Opera */
     }
 }
 
 @keyframes spin {
     0% {
-        -webkit-transform: rotate(0deg); /* Chrome, Opera 15+, Safari 3.1+ */
-        -ms-transform: rotate(0deg); /* IE 9 */
-        transform: rotate(0deg); /* Firefox 16+, IE 10+, Opera */
+        -webkit-transform: rotate(0deg);
+        /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);
+        /* IE 9 */
+        transform: rotate(0deg);
+        /* Firefox 16+, IE 10+, Opera */
     }
 
     100% {
-        -webkit-transform: rotate(360deg); /* Chrome, Opera 15+, Safari 3.1+ */
-        -ms-transform: rotate(360deg); /* IE 9 */
-        transform: rotate(360deg); /* Firefox 16+, IE 10+, Opera */
+        -webkit-transform: rotate(360deg);
+        /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);
+        /* IE 9 */
+        transform: rotate(360deg);
+        /* Firefox 16+, IE 10+, Opera */
     }
 }
 
@@ -233,49 +254,69 @@ div#sidebar-collapse a {
     background: #222222;
     opacity: 0.1;
     z-index: 1100;
-    -webkit-transform: translateX(0); /* Chrome, Opera 15+, Safari 3.1+ */
-    -ms-transform: translateX(0); /* IE 9 */
-    transform: translateX(0); /* Firefox 16+, IE 10+, Opera */
+    -webkit-transform: translateX(0);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(0);
+    /* IE 9 */
+    transform: translateX(0);
+    /* Firefox 16+, IE 10+, Opera */
 }
 
-    .loading-1-wrapper .loading-1-section.section-left {
-        left: 0;
-    }
+.loading-1-wrapper .loading-1-section.section-left {
+    left: 0;
+}
 
-    .loading-1-wrapper .loading-1-section.section-right {
-        right: 0;
-    }
+.loading-1-wrapper .loading-1-section.section-right {
+    right: 0;
+}
 
 /* loaded */
 .loaded-1 .loading-1-wrapper .loading-1-section.section-left {
-    -webkit-transform: translateX(-100%); /* Chrome, Opera 15+, Safari 3.1+ */
-    -ms-transform: translateX(-100%); /* IE 9 */
-    transform: translateX(-100%); /* Firefox 16+, IE 10+, Opera */
-    -webkit-transition: all 0.35s 0.15s cubic-bezier(0.645, 0.045, 0.355, 1.000); /* 0.7s 0.3s */
-    transition: all 0.35s 0.15s cubic-bezier(0.645, 0.045, 0.355, 1.000); /* 0.7s 0.3s */
+    -webkit-transform: translateX(-100%);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(-100%);
+    /* IE 9 */
+    transform: translateX(-100%);
+    /* Firefox 16+, IE 10+, Opera */
+    -webkit-transition: all 0.35s 0.15s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    /* 0.7s 0.3s */
+    transition: all 0.35s 0.15s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    /* 0.7s 0.3s */
 }
 
 .loaded-1 .loading-1-wrapper .loading-1-section.section-right {
-    -webkit-transform: translateX(100%); /* Chrome, Opera 15+, Safari 3.1+ */
-    -ms-transform: translateX(100%); /* IE 9 */
-    transform: translateX(100%); /* Firefox 16+, IE 10+, Opera */
-    -webkit-transition: all 0.35s 0.15s cubic-bezier(0.645, 0.045, 0.355, 1.000); /* 0.7s 0.3s */
-    transition: all 0.35s 0.15s cubic-bezier(0.645, 0.045, 0.355, 1.000); /* 0.7s 0.3s */
+    -webkit-transform: translateX(100%);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(100%);
+    /* IE 9 */
+    transform: translateX(100%);
+    /* Firefox 16+, IE 10+, Opera */
+    -webkit-transition: all 0.35s 0.15s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    /* 0.7s 0.3s */
+    transition: all 0.35s 0.15s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    /* 0.7s 0.3s */
 }
 
 .loaded-1 .loading-1 {
     opacity: 0;
-    -webkit-transition: all 0.15s ease-out; /* 0.3s */
-    transition: all 0.15s ease-out; /* 0.3s */
+    -webkit-transition: all 0.15s ease-out;
+    /* 0.3s */
+    transition: all 0.15s ease-out;
+    /* 0.3s */
 }
 
 .loaded-1 .loading-1-wrapper {
     visibility: hidden;
-    -webkit-transform: translateY(-100%); /* Chrome, Opera 15+, Safari 3.1+ */
-    -ms-transform: translateY(-100%); /* IE 9 */
-    transform: translateY(-100%); /* Firefox 16+, IE 10+, Opera */
-    -webkit-transition: all 0.15s 0.5s ease-out; /* 0.3s 1s */
-    transition: all 0.15s 0.5s ease-out; /* 0.3s 1s */
+    -webkit-transform: translateY(-100%);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateY(-100%);
+    /* IE 9 */
+    transform: translateY(-100%);
+    /* Firefox 16+, IE 10+, Opera */
+    -webkit-transition: all 0.15s 0.5s ease-out;
+    /* 0.3s 1s */
+    transition: all 0.15s 0.5s ease-out;
+    /* 0.3s 1s */
 }
 
 /*--------- loading type 2 ---------*/
@@ -287,8 +328,8 @@ div#sidebar-collapse a {
     width: 100%;
     height: 100%;
     z-index: 1100;
-    background: radial-gradient(rgba(20, 20, 20,.8), rgba(0, 0, 0, .8));
-    background: -webkit-radial-gradient(rgba(20, 20, 20,.8), rgba(0, 0, 0,.8));
+    background: radial-gradient(rgba(20, 20, 20, .8), rgba(0, 0, 0, .8));
+    background: -webkit-radial-gradient(rgba(20, 20, 20, .8), rgba(0, 0, 0, .8));
     opacity: 0;
 }
 
@@ -317,7 +358,8 @@ form#vendor-form h5 {
 }
 
 
-.modal h4, .modal .h4 {
+.modal h4,
+.modal .h4 {
     font-size: 16px;
 }
 
@@ -354,7 +396,7 @@ a.btn.btn-secondary.btn_search.XacNhanDonHangTraLai {
     text-transform: uppercase;
     color: #212121;
     text-align: left;
-    text-shadow: 0 0 12px rgba(0,0,0,0.25);
+    text-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
 }
 
 .chaoBibosmart {
@@ -377,11 +419,13 @@ a.btn.btn-secondary.btn_search.XacNhanDonHangTraLai {
     width: 98%;
     padding-bottom: 20px;
     height: 100%;
-    transition: transform .2s; /* Animation */
+    transition: transform .2s;
+    /* Animation */
 }
 
 .MSologan.active:hover {
-    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform: scale(1.1);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 body.fixed-navbar.has-animation .MSologan {
@@ -403,16 +447,19 @@ body.fixed-navbar.has-animation .MSologan {
     -moz-box-shadow: 5px 7px 10px 0px rgba(0,0,0,0.75);*/
 }
 
-    .MSologan.active {
-        background: #f44336;
-        color: #fff;
-        transition: color 1s ease-in-out;
-        -moz-transition: color 1s ease-in-out; /* FF 4 */
-        -webkit-transition: color 1s ease-in-out; /* Safari & Chrome */
-        -o-transition: color 1s ease-in-out; /* Opera */
-        -webkit-transition: width 0.4s;
-        transition: width 0.4s;
-    }
+.MSologan.active {
+    background: #f44336;
+    color: #fff;
+    transition: color 1s ease-in-out;
+    -moz-transition: color 1s ease-in-out;
+    /* FF 4 */
+    -webkit-transition: color 1s ease-in-out;
+    /* Safari & Chrome */
+    -o-transition: color 1s ease-in-out;
+    /* Opera */
+    -webkit-transition: width 0.4s;
+    transition: width 0.4s;
+}
 
 .MNumber {
     font-family: 'Rift';
@@ -484,10 +531,10 @@ body.fixed-navbar.has-animation .Mtext {
     height: 50px;
 }
 
-    .ihead .ibox-title {
-        font-size: 16px;
-        font-weight: 600;
-    }
+.ihead .ibox-title {
+    font-size: 16px;
+    font-weight: 600;
+}
 
 .formhorizontalM {
     margin-left: 17px;
@@ -516,6 +563,7 @@ body:not(.fixed-layout).sidebar-mini .page-brand {
 body:not(.fixed-layout).sidebar-mini .page-sidebar {
     width: 80px;
 }
+
 /*.header {
     height:104px;
 }
@@ -524,7 +572,8 @@ body:not(.fixed-layout).sidebar-mini .content-wrapper {
     margin-left: 76px;
 }
 
-body.fixed-layout .content-wrapper, body.fixed-navbar .content-wrapper {
+body.fixed-layout .content-wrapper,
+body.fixed-navbar .content-wrapper {
     padding-top: 70px;
 }
 
@@ -537,7 +586,7 @@ body.fixed-layout .content-wrapper, body.fixed-navbar .content-wrapper {
     background-color: #fff;
 }
 
-.side-menu > li a {
+.side-menu>li a {
     color: #212121;
 }
 
@@ -553,30 +602,33 @@ body.fixed-layout .content-wrapper, body.fixed-navbar .content-wrapper {
     margin-top: 56px;
 }
 
-.side-menu > li.active {
+.side-menu>li.active {
     background-color: #f2f2f2;
 }
 
-.side-menu > li a:focus, .side-menu > li a:hover {
+.side-menu>li a:focus,
+.side-menu>li a:hover {
     color: #212121;
     background-color: #f2f2f2;
 }
 
-.sidebar-mini .side-menu > li:hover > a {
+.sidebar-mini .side-menu>li:hover>a {
     color: #212121;
     background-color: #f2f2f2;
 }
 
-.side-menu > li.active > a, .side-menu > li.active > a:focus, .side-menu > li.active > a:hover {
+.side-menu>li.active>a,
+.side-menu>li.active>a:focus,
+.side-menu>li.active>a:hover {
     color: #212121;
     background-color: #f2f2f2;
 }
 
-.side-menu > li.active {
+.side-menu>li.active {
     background-color: #fff;
 }
 
-.sidebar-mini .side-menu > li:hover .nav-2-level {
+.sidebar-mini .side-menu>li:hover .nav-2-level {
     background-color: #fff;
 }
 
@@ -661,11 +713,11 @@ body:not(.fixed-layout).sidebar-mini .side-menu li .sidebar-item-icon {
     padding: 10px 9px;
 }
 
-.side-menu .nav-2-level > li > a {
+.side-menu .nav-2-level>li>a {
     padding: 2px 10px 2px 10px;
 }
 
-.side-menu .nav-3-level > li > a {
+.side-menu .nav-3-level>li>a {
     padding: 2px 10px 2px 29px;
 }
 
@@ -754,10 +806,10 @@ div#form_search {
     top: 14px;
 }
 
-    #icon_bar a {
-        font-size: 21px;
-        color: #fff;
-    }
+#icon_bar a {
+    font-size: 21px;
+    color: #fff;
+}
 
 #icon_noti {
     position: absolute;
@@ -765,10 +817,10 @@ div#form_search {
     top: 14px;
 }
 
-    #icon_noti a {
-        font-size: 21px;
-        color: #fff;
-    }
+#icon_noti a {
+    font-size: 21px;
+    color: #fff;
+}
 
 #icon_home a {
     font-size: 21px;
@@ -871,7 +923,7 @@ img.brand-mini {
     padding: 0 22px !important;
 }
 
-.side-menu > li a {
+.side-menu>li a {
     white-space: initial !important;
     overflow: hidden;
 }
@@ -910,7 +962,8 @@ nav#sidebar {
     border-top: 13px solid #f3f3f3;
 }
 
-body.fixed-layout .content-wrapper, body.fixed-navbar .content-wrapper {
+body.fixed-layout .content-wrapper,
+body.fixed-navbar .content-wrapper {
     padding-top: 0px;
 }
 
@@ -998,13 +1051,13 @@ body:not(.fixed-layout).sidebar-mini .side-menu li .nav-2-level {
 }
 
 .Viewtab .tab button:hover {
-        background-color: #ddd;
+    background-color: #ddd;
 }
 
 .Viewtab .tab button.active {
-        background-color: #5f7e98;
-        color: #ffffff;
-        font-weight: 500;
+    background-color: #5f7e98;
+    color: #ffffff;
+    font-weight: 500;
 }
 
 .Viewtab .tabcontent {
@@ -1034,5 +1087,5 @@ body:not(.fixed-layout).sidebar-mini .side-menu li .nav-2-level {
 }
 
 .modal-header .close::before {
-    display:none
+    display: none
 }
