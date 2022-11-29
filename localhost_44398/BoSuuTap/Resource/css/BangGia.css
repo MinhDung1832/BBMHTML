@@ -6,6 +6,9 @@
     margin: 20px 27px 0px 85px;
     border-radius: 10px;
 }
+.body{
+    width: 100%;
+}
 .content-wrapper1 {
     min-height: 76px;
     border: 0px solid #f3f3f3;
@@ -27,6 +30,10 @@ letter-spacing: 0.05em;
 
 color: #212121;
 
+}
+.table{
+    width: 98%;
+    
 }
 
 .layoutBST {
