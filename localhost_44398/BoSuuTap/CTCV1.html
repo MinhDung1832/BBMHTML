@@ -49,6 +49,122 @@
         color: #212121;
         text-decoration: none;
     }
+    input.form-control.input-page2 {
+        border-radius: 8px !important;
+        width: 100% !important;
+        height: 40px !important;
+        max-width: none !important;
+        /* margin-top: 20px; */
+        /* margin-left: 5px; */
+    }
+    textarea.form-control.input-page2 {
+        border-radius: 8px !important;
+        width: 100% !important;
+        height: 40px !important;
+        max-width: none !important;
+        /* margin-top: 20px; */
+        /* margin-left: 5px; */
+    }
+    .dropdown.bootstrap-select.form-control.bs3{
+        border-radius: 15px;
+        height: 40px !important;
+    }
+    .col-input-page6 {
+        padding-bottom: 26px;
+        padding-left: 0px;
+    }
+
+    .bkackground-uploadfile {
+        width: 672px;
+        height: 92px;
+        border: 1px dashed rgba(0, 0, 0, 0.38);
+        border-radius: 4px;
+    }
+
+    .Viewtab .tab button {
+        font-size: 13px;
+        width: auto;
+    }
+
+    .button-page6 {
+        font-family: 'SF Pro';
+        width: 320px;
+        height: 40px;
+        left: 16px;
+        top: 525px;
+        border: none;
+        border-radius: 8px;
+        background: #D3D3D3;
+        color: #FFFFFF;
+        font-style: normal;
+        font-weight: bold !important;
+        font-size: 16px !important;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+        display: none;
+        float: left;
+        min-width: 160px;
+        padding: 5px 0;
+        margin: 5px 0 0;
+        font-size: 14px;
+        text-align: left;
+        list-style: none;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ccc;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        -webkit-box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+        box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+    }
+
+    button.btn.dropdown-toggle.btn-default.bs-placeholder {
+        width: 280px !important;
+        height: 40px !important;
+        border-radius: 8px !important;
+    }
+
+    .modal-title-page6 {
+        font-family: 'SF Pro';
+        font-style: normal;
+        font-weight: bold !important;
+        font-size: 20px !important;
+        line-height: 24px !important;
+        letter-spacing: 0.15px;
+
+        color: rgba(0, 0, 0, 0.87);
+        padding-bottom: 4px;
+    }
+
+    .modal-desr-page6 {
+        width: 257px;
+        height: 20px;
+        left: 16px;
+        top: 48px;
+
+        font-family: 'SF Pro' important;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .filter-option-inner-inner {
+        padding: 4px
+    }
+
+    .dropdown-menu.open {
+        width: 280px;
+    }
+
+    input.form-control {
+        max-width: none;
+    }
 </style>
 
 <body class="fixed-navbar sidebar-mini">
@@ -251,7 +367,7 @@
                             alt=""></a>
                 </div>
                 <div class="cardTbl">
-                    <Table class="table table-hover" style="    margin: 10px 0px 0px 0px;">
+                    <Table class="table table-hover" style="    margin: 10px 0px 10px 13px;">
                         <thead style="height: 30px;">
                             <tr>
                                 <th class="textTblBST">Công việc</th>
@@ -287,7 +403,7 @@
                     <a class="col-md-1 iconinfo"><img src="images/Shape (1).png" onclick="showModal();" alt=""></a>
                 </div>
                 <div class="cardTbl">
-                    <Table class="table table-hover" style="    margin: 10px 0px 0px 0px;">
+                    <Table class="table table-hover" style="    margin: 10px 0px 10px 13px;">
                         <thead style="height: 30px;">
                             <tr>
                                 <th class="textTblBST">Công việc</th>
@@ -323,7 +439,7 @@
                     <a class="col-md-1 iconinfo"><img src="images/Shape (1).png" alt="" onclick="showModal();"></a>
                 </div>
                 <div class="cardTbl">
-                    <Table class="table table-hover" style="    margin: 10px 0px 0px 0px;">
+                    <Table class="table table-hover" style="    margin: 10px 0px 10px 13px;">
                         <thead style="height: 30px;">
                             <tr>
                                 <th class="textTblBST">Công việc</th>
@@ -359,7 +475,7 @@
                     <a class="col-md-1 iconinfo"><img src="images/Shape (1).png" alt="" onclick="showModal();"></a>
                 </div>
                 <div class="cardTbl">
-                    <Table class="table table-hover" style="    margin: 10px 0px 0px 0px;">
+                    <Table class="table table-hover" style="    margin: 10px 0px 10px 13px;">
                         <thead style="height: 30px;">
                             <tr>
                                 <th class="textTblBST">Công việc</th>
@@ -447,7 +563,7 @@
                         <div class="col-md-3">
                             <span class="TitleMadal ">Deadline</span>
                             <div class="">
-                                <input type="date" class="form-control">
+                                <input type="date" class="form-control input-page2">
                             </div>
                         </div>
                         <div class="col-md-3">
@@ -472,18 +588,17 @@
                         <div class="col-md-6">
                             <span class="TitleMadal ">Yêu cầu</span>
                             <div>
-                                <textarea class="" name="" id="" cols="120" rows="3"></textarea>
+                                <textarea name="" class="form-control input-page2" data-live-search="true"
+                                    style="max-width: none; height: 11% !important" cols="50" rows="20"></textarea>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="Upload_img">
                                 <input class="form-control" type="hidden" id="imgLink">
-                                <div id="wp_thum_img" onclick="reupimg()"
-                                    style="position:absolute; text-align:center; width: 609px;
-                                    height: 77px;border: 1px dashed rgba(0, 0, 0, 0.38);border-radius: 4px;">
+                                <div id="wp_thum_img" onclick="reupimg()" style="position:absolute; text-align:center; width: 609px;
+                                    height: 100px;border: 1px dashed rgba(0, 0, 0, 0.38);border-radius: 4px;">
                                     <div class="img_src" style="padding-top: 16px; cursor:pointer">
-                                        <img id="thum_img" for="fileUpload"
-                                            src="../BoSuuTap/images/Vector.png"
+                                        <img id="thum_img" for="fileUpload" src="../BoSuuTap/images/Vector.png"
                                             style="width: 40px" />
                                         <div id="upload_theme">
                                             <p style="">Up ảnh mô tả</p>
@@ -506,7 +621,8 @@
                     </div>
                 </div>
                 <div class="row" style="padding-bottom: 15px;">
-                    <button type="button" class="btn btn-danger" style="margin-left: 1107px;padding:10 70" onclick="js_acceptDelete();">Tạo mới</button>
+                    <button type="button" class="btn btn-danger" style="margin-left: 1107px;padding:10 70"
+                        onclick="js_acceptDelete();">Tạo mới</button>
                 </div>
             </div>
         </div>
