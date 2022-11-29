@@ -1,15 +1,14 @@
 
-@font-face {
-    font-family: 'SF Pro';
-    src: url('/Resource/font/SF-Pro.ttf') format('truetype');
+body{
+    font-family: 'SF Pro' !important;
+    min-width: 100%;    
 }
 .content-main {
     display: flex;
     flex-direction: column;
     background-color:#f3f3f3;
-   
     margin: 10px 20px 0px 76px;
-  
+    
 }
 .content-design{
     width: 100%;
@@ -39,10 +38,15 @@
     width: 8px;
 }
 .status-title {
+    font-weight: 700;
     letter-spacing: 0.15px;
     font-size: 14px;
     color: #F9A825;
     padding-left:10px;
+}
+.status-title.second {
+    font-weight: 700;
+    color:#D2151E;
 }
 .status-close {
     width: 25px;
@@ -54,6 +58,13 @@
 
 .design-info {
     margin-top: 10px;
+}
+.design-title {
+    font-weight: 590;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #000000;
 }
 .infor-title {
     font-weight: 590;
@@ -68,7 +79,8 @@
 .img-product {
     height: 80px;
     width: 80px;
-    margin-right: 10px;
+    margin: 10px 10px 10px 0;
+   
 }
 
 .infor-desr {
@@ -82,6 +94,7 @@
 
     padding-right: 30px;
 }
+
 .request-body{
     margin: 10px 0;
     padding: 10px;
@@ -131,7 +144,7 @@ color: rgba(0, 0, 0, 0.87);
     margin-right: 23px;
 }
 .icon-list {
-   
+    margin-right: 10px;
     height: 20px;
 }
 .checklist-addnew {
