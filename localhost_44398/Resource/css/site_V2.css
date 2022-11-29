@@ -11,7 +11,10 @@
 
 @font-face {
     font-family: 'SF Pro';
+
+
     src: url('../SF-Pro-Display/SF-Pro.ttf') format('truetype');
+
 }
 
 @font-face {
