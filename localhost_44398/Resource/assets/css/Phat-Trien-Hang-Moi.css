@@ -305,6 +305,9 @@
   button.btn.dropdown-toggle.btn-default.bs-placeholder:hover {
     background-color: #fff !important
   }
+  .div-md-2{
+    margin-right: 36px;
+  }
   @media screen and (max-width: 991px) {
     .modal-content-overflow {
       overflow: scroll;
