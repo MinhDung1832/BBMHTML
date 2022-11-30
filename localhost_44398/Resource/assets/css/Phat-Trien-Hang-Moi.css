@@ -217,10 +217,6 @@
     margin-right: 20px !important;
   }
 
-  .button.btn.dropdown-toggle.btn-default.bs-placeholder {
-    border: none;
-  }
-
   .filter-option-inner-inner {
     font-family: 'SF Pro';
     font-style: normal;
@@ -299,10 +295,6 @@
     height: auto;
     margin: 20px 30px 20px 86px;
     display: flex;
-  }
-
-  button.btn.dropdown-toggle.btn-default.bs-placeholder {
-    border: none !important
   }
 
   button.btn.dropdown-toggle.btn-default.bs-placeholder:hover {

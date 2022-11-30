@@ -110,7 +110,7 @@
 .card-bottom {
     margin-top: 30px;
 }
- button.btn.dropdown-toggle.btn-light.bs-placeholder [data-id = "select1"] {
+button.btn.dropdown-toggle.btn-light.bs-placeholder[data-id = "select1"] {
     background: #fff;
     font-size: 12px;
     border: 1px solid #d7d7d7;

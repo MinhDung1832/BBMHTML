@@ -34,6 +34,7 @@
     <link href="../Resource/Content/jquery-ui.popup7e0c.css?v=0.1" rel="stylesheet" />
     <link href="../Resource/css/jquery.toast.css" rel="stylesheet" />
     <link href="../Resource/css/Trang2.css" rel="stylesheet" />
+    <link href="Resource/css/page3.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="../../use.fontawesome.com/releases/v5.13.0/css/all.css"
         integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
@@ -48,6 +49,12 @@
         line-height: 20px;
         color: #212121;
         text-decoration: none;
+    }
+
+    button.btnIcon {
+        margin: 15px 0 0 45px;
+        border: none;
+        background-color: white;
     }
 
     input.form-control.input-page6 {
@@ -82,7 +89,7 @@
         line-height: 20px;
     }
 
-    .btn-danger {
+    .btn-danger1 {
         color: #fff;
         background-color: #d9534f;
         border-color: #d43f3a;
@@ -96,14 +103,15 @@
         line-height: 20px;
     }
 
-    img {
+    img#imgbst {
         width: auto;
     }
 
-    .dropdown.bootstrap-select.form-control.bs3{
+    .dropdown.bootstrap-select.form-control.bs3 {
         border-radius: 15px;
         height: 40px !important;
     }
+
     .col-input-page6 {
         padding-bottom: 26px;
         padding-left: 0px;
@@ -160,6 +168,52 @@
 
     button.btn.dropdown-toggle.btn-default.bs-placeholder {
         width: 410px !important;
+        height: 40px !important;
+        border-radius: 8px !important;
+    }
+
+    button.btn.dropdown-toggle.btn-default.bs-placeholder[aria-owns='bs-select-6'] {
+        width: 280px !important;
+        height: 40px !important;
+        border-radius: 8px !important;
+    }
+
+    button.btn.dropdown-toggle.btn-default.bs-placeholder[aria-owns='bs-select-6'] > .dropdown-menu.open {
+        width: 280px;
+    }
+
+    button.btn.dropdown-toggle.btn-default.bs-placeholder[aria-owns='bs-select-7'] {
+        width: 280px !important;
+        height: 40px !important;
+        border-radius: 8px !important;
+    }
+
+    button.btn.dropdown-toggle.btn-default.bs-placeholder[aria-owns='bs-select-8'] {
+        width: 280px !important;
+        height: 40px !important;
+        border-radius: 8px !important;
+    }
+
+    button.btn.dropdown-toggle.btn-default.bs-placeholder[aria-owns='bs-select-9'] {
+        width: 280px !important;
+        height: 40px !important;
+        border-radius: 8px !important;
+    }
+
+    button.btn.dropdown-toggle.btn-default.bs-placeholder[aria-owns='bs-select-10'] {
+        width: 280px !important;
+        height: 40px !important;
+        border-radius: 8px !important;
+    }
+
+    button.btn.dropdown-toggle.btn-default.bs-placeholder[aria-owns='bs-select-11'] {
+        width: 280px !important;
+        height: 40px !important;
+        border-radius: 8px !important;
+    }
+
+    button.btn.dropdown-toggle.btn-default.bs-placeholder[aria-owns='bs-select-12'] {
+        width: 280px !important;
         height: 40px !important;
         border-radius: 8px !important;
     }
@@ -298,16 +352,14 @@
                     </style>
                     <div class="row" style="margin: 10 0 0 0;">
                         <div class="col-md-2 ">
-                            <div class="tabs">
-                                <strong style="font-size: 14px;">Danh sách bộ sưu
-                                    tập</strong>
-                            </div>
+                            <strong style="font-size: 14px;">Danh sách bộ sưu
+                                tập </strong>
                         </div>
-                        <div class="col-md-1" style="margin-left: -90px;">
+                        <!-- <div class="col-md-1" style="margin-left: -90px;">
                             <span style=" font-size: 14px;">|</span>
-                        </div>
-                        <div class="col-md-2 tabs" style="margin-left: -100px;">
-                            <span style="font-size: 14px;">Duyệt bộ
+                        </div> -->
+                        <div class="col-md-2 tabs" style="margin-left: -90px;">
+                            <span style="font-size: 14px;"> | Duyệt bộ
                                 sưu
                                 tập</span>
                         </div>
@@ -323,14 +375,14 @@
                             <button class="btn btn-default1">Áp dụng</button>
                         </div>
                         <div class="col-md-4">
-                            <button class="btn btn-danger" onclick="show();">Tạo mới bộ sưu tập</button>
+                            <button class="btn btn-danger1" onclick="show();">Tạo mới bộ sưu tập</button>
                         </div>
                     </div>
                     <div class="containerBST" style="margin: 10px 0px 0px 15px;">
                         <div class="panel panel-default">
                             <div class="panel-heading row" style="background-color: white;padding: 5px 0px 7px 0px;">
                                 <div class="col-md-1">
-                                    <img src="images/imgbst.png" alt="">
+                                    <img src="images/imgbst.png" id="imgbst" alt="">
                                 </div>
                                 <div class="col-md-3 abc">
                                     <div class="row">
@@ -357,88 +409,78 @@
                                     </div>
                                 </div>
                                 <div class="col-md-1">
-                                    <img data-toggle="collapse" data-target="#demo1" class="accordion-toggle imgicon"
-                                        src="images/ảnh_Viber_2022-11-25_15-16-07-788.png" alt="">
+                                    <button class="btnIcon"><img data-toggle="collapse" data-target="#demo1"
+                                            class="accordion-toggle imgicon"
+                                            src="images/ảnh_Viber_2022-11-25_15-16-07-788.png" alt="">
+                                    </button>
                                 </div>
                             </div>
                             <div class="panel-body hiddenRow">
                                 <div class="accordian-body collapse" id="demo1">
-                                    <table class="table table-condensed table-striped">
-                                        <thead>
+                                    <div class="">
+                                        <table class="table table-striped" style="width: 100%;">
+                                            <thead style="height: 40px;">
+                                                <tr style="background-color:#FFE0B3 ;">
+                                                    <th class="text-left vertical-align" style="vertical-align:middle;">
+                                                        Stt
+                                                    </th>
+                                                    <th class="text-left vertical-align" style="vertical-align:middle;">
+                                                        Tên hàng
+                                                    </th>
+                                                    <th class="text-left vertical-align" style="vertical-align:middle;">
+                                                        Category
+                                                    </th>
+                                                    <th class="text-left vertical-align" style="vertical-align:middle;">
+                                                        Group
+                                                    </th>
+                                                    <th class="text-left vertical-align" style="vertical-align:middle;">
+                                                        Function
+                                                    </th>
+                                                    <th class="text-left vertical-align" style="vertical-align:middle;">
+                                                        Mã hàng
+                                                    </th>
+                                                    <th class="text-left vertical-align" style="vertical-align:middle;">
+                                                        Giá bán
+                                                    </th>
+                                                    <th class="text-left vertical-align" style="vertical-align:middle;">
+                                                        SL Combo
+                                                    </th>
+                                                </tr>
+                                            </thead>
 
-                                        </thead>
+                                            <tbody style="height: 40px;">
 
-                                        <tbody>
-
-                                            <tr>
-                                                <td colspan="12">
-                                                    <div>
-                                                        <div class="row">
-                                                            <table class="table table-striped" style="width: 98.65%;
-                                                            margin: -6px 0 -4px 10px;">
-                                                                <thead style="height: 40px;">
-                                                                    <tr style="background-color:#FFE0B3 ;">
-                                                                        <th class="text-left vertical-align"
-                                                                            style="vertical-align:middle;">
-                                                                            Stt
-                                                                        </th>
-                                                                        <th class="text-left vertical-align"
-                                                                            style="vertical-align:middle;">
-                                                                            Tên hàng
-                                                                        </th>
-                                                                        <th class="text-left vertical-align"
-                                                                            style="vertical-align:middle;">
-                                                                            Category
-                                                                        </th>
-                                                                        <th class="text-left vertical-align"
-                                                                            style="vertical-align:middle;">
-                                                                            Group
-                                                                        </th>
-                                                                        <th class="text-left vertical-align"
-                                                                            style="vertical-align:middle;">
-                                                                            Function
-                                                                        </th>
-                                                                        <th class="text-left vertical-align"
-                                                                            style="vertical-align:middle;">
-                                                                            Mã hàng
-                                                                        </th>
-                                                                        <th class="text-left vertical-align"
-                                                                            style="vertical-align:middle;">
-                                                                            Giá bán
-                                                                        </th>
-                                                                        <th class="text-left vertical-align"
-                                                                            style="vertical-align:middle;">
-                                                                            SL Combo
-                                                                        </th>
-                                                                    </tr>
-                                                                </thead>
-
-                                                                <tbody style="height: 40px;">
-
-                                                                    <tr style="background-color: #FFFAF3;">
-                                                                        <td>01</td>
-                                                                        <td>Sữa dê công thức DG</td>
-                                                                        <td>Bé uống</td>
-                                                                        <td>Sữa bột công</td>
-                                                                        <td>Sữa dê</td>
-                                                                        <td>806933</td>
-                                                                        <td>564,000</td>
-                                                                        <td><input type="number" class="" style="border: 1px solid #ccc;
+                                                <tr style="background-color: #FFFAF3;">
+                                                    <td>01</td>
+                                                    <td>Sữa dê công thức DG</td>
+                                                    <td>Bé uống</td>
+                                                    <td>Sữa bột công</td>
+                                                    <td>Sữa dê</td>
+                                                    <td>806933</td>
+                                                    <td>564,000</td>
+                                                    <td><input type="number" class="" style="border: 1px solid #ccc;
                                                                             border-radius: 4px;
                                                                             width: 51px;
                                                                             height: 27px;"></td>
-                                                                    </tr>
+                                                </tr>
 
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-
-                                        </tbody>
-                                    </table>
+                                            </tbody>
+                                            <tfoot style="height: 40px;">
+                                                <tr style="background-color:#FFE0B3 ;">
+                                                    <th colspan="8">
+                                                        <a style="border: none;" onclick="js_show()"><img
+                                                                src="images/Add.png" id="imgbst" alt=""></a>
+                                                        <span style="font-weight: 400;
+                                                    font-size: 14px;
+                                                    line-height: 23px;padding-left: 10;">Thêm mới sản phẩm</span>
+                                                    </th>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                        <!-- <div>
+                                            <img src="images/Add.png" alt="">
+                                        </div> -->
+                                    </div>
                                 </div>
                             </div>
 
@@ -450,7 +492,7 @@
                         <div class="panel panel-default">
                             <div class="panel-heading row" style="background-color: white;padding: 6px 0px 8px 0px;">
                                 <div class="col-md-1">
-                                    <img src="images/imgbst.png" alt="">
+                                    <img src="images/imgbst.png" id="imgbst" alt="">
                                 </div>
                                 <div class="col-md-3 abc">
                                     <div class="row">
@@ -478,8 +520,12 @@
                                 </div>
 
                                 <div class="col-md-1">
-                                    <img data-toggle="collapse" data-target="#demo2" class="accordion-toggle imgicon"
-                                        src="images/ảnh_Viber_2022-11-25_15-16-07-788.png" alt="">
+                                    <button class="btnIcon">
+
+                                        <img data-toggle="collapse" data-target="#demo2"
+                                            class="accordion-toggle imgicon"
+                                            src="images/ảnh_Viber_2022-11-25_15-16-07-788.png" alt="">
+                                    </button>
                                 </div>
                             </div>
                             <div class="panel-body hiddenRow">
@@ -551,6 +597,19 @@
                                                                     </tr>
 
                                                                 </tbody>
+                                                                <tfoot style="height: 40px;">
+                                                                    <tr style="background-color:#FFE0B3 ;">
+                                                                        <th colspan="8">
+                                                                            <a style="border: none;" href=""><img
+                                                                                    src="images/Add.png" id="imgbst"
+                                                                                    alt=""></a>
+                                                                            <span style="font-weight: 400;
+                                                                            font-size: 14px;
+                                                                            line-height: 23px;padding-left: 10;">Thêm
+                                                                                mới sản phẩm</span>
+                                                                        </th>
+                                                                    </tr>
+                                                                </tfoot>
                                                             </table>
                                                         </div>
                                                     </div>
@@ -571,7 +630,7 @@
                         <div class="panel panel-default">
                             <div class="panel-heading row" style="background-color: white;padding: 5px 0px 7px 0px;">
                                 <div class="col-md-1">
-                                    <img src="images/imgbst.png" alt="">
+                                    <img src="images/imgbst.png" id="imgbst" alt="">
                                 </div>
                                 <div class="col-md-3 abc">
                                     <div class="row">
@@ -599,8 +658,12 @@
                                 </div>
 
                                 <div class="col-md-1">
-                                    <img data-toggle="collapse" data-target="#demo3" class="accordion-toggle imgicon"
-                                        src="images/ảnh_Viber_2022-11-25_15-16-07-788.png" alt="">
+                                    <button class="btnIcon">
+
+                                        <img data-toggle="collapse" data-target="#demo3"
+                                            class="accordion-toggle imgicon"
+                                            src="images/ảnh_Viber_2022-11-25_15-16-07-788.png" alt="">
+                                    </button>
                                 </div>
                             </div>
                             <div class="panel-body hiddenRow">
@@ -672,6 +735,19 @@
                                                                     </tr>
 
                                                                 </tbody>
+                                                                <tfoot style="height: 40px;">
+                                                                    <tr style="background-color:#FFE0B3 ;">
+                                                                        <th colspan="8">
+                                                                            <a style="border: none;" href=""><img
+                                                                                    src="images/Add.png" id="imgbst"
+                                                                                    alt=""></a>
+                                                                            <span style="font-weight: 400;
+                                                                            font-size: 14px;
+                                                                            line-height: 23px;padding-left: 10;">Thêm
+                                                                                mới sản phẩm</span>
+                                                                        </th>
+                                                                    </tr>
+                                                                </tfoot>
                                                             </table>
                                                         </div>
                                                     </div>
@@ -692,7 +768,7 @@
                         <div class="panel panel-default">
                             <div class="panel-heading row" style="background-color: white;padding: 6px 0px 8px 0px;">
                                 <div class="col-md-1">
-                                    <img src="images/imgbst.png" alt="">
+                                    <img src="images/imgbst.png" id="imgbst" alt="">
                                 </div>
                                 <div class="col-md-3 abc">
                                     <div class="row">
@@ -720,8 +796,12 @@
                                 </div>
 
                                 <div class="col-md-1">
-                                    <img data-toggle="collapse" data-target="#demo4" class="accordion-toggle imgicon"
-                                        src="images/ảnh_Viber_2022-11-25_15-16-07-788.png" alt="">
+                                    <button class="btnIcon">
+
+                                        <img data-toggle="collapse" data-target="#demo4"
+                                            class="accordion-toggle imgicon"
+                                            src="images/ảnh_Viber_2022-11-25_15-16-07-788.png" alt="">
+                                    </button>
                                 </div>
                             </div>
                             <div class="panel-body hiddenRow">
@@ -793,6 +873,18 @@
                                                                     </tr>
 
                                                                 </tbody>
+                                                                <tfoot style="height: 40px;">
+                                                                    <tr style="background-color:#FFE0B3 ;">
+                                                                        <th colspan="8">
+                                                                            <a href=""><img src="images/Add.png"
+                                                                                    id="imgbst" alt=""></a>
+                                                                            <span style="font-weight: 400;
+                                                                            font-size: 14px;
+                                                                            line-height: 23px;padding-left: 10;">Thêm
+                                                                                mới sản phẩm</span>
+                                                                        </th>
+                                                                    </tr>
+                                                                </tfoot>
                                                             </table>
                                                         </div>
                                                     </div>
@@ -809,124 +901,7 @@
 
 
                     </div>
-                    <div class="containerBST" style="margin: 10px 0px 0px 15px;">
-                        <div class="panel panel-default">
-                            <div class="panel-heading row" style="background-color: white;padding: 5px 0px 7px 0px;">
-                                <div class="col-md-1">
-                                    <img src="images/imgbst.png" alt="">
-                                </div>
-                                <div class="col-md-3 abc">
-                                    <div class="row">
-                                        <span class="col-md-12 textbst1">Mã BST</span>
-                                        <span class="col-md-12 textbst2">BST2022-07-00001</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 abc">
-                                    <div class="row">
-                                        <span class="col-md-12 textbst1">Tên BST</span>
-                                        <span class="col-md-12 textbst2">Vân 2507-1</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-2 abc">
-                                    <div class="row">
-                                        <span class="col-md-12 textbst1">Sl Skus</span>
-                                        <span class="col-md-12 textbst2">3244412</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-2 abc">
-                                    <div class="row">
-                                        <span class="col-md-12 textbst1">GIá trị</span>
-                                        <span class="col-md-12 textbst2">6,633,800,561</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-1">
-                                    <img data-toggle="collapse" data-target="#demo5" class="accordion-toggle imgicon"
-                                        src="images/ảnh_Viber_2022-11-25_15-16-07-788.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel-body hiddenRow">
-                            <div class="accordian-body collapse" id="demo5">
-                                <table class="table table-condensed table-striped">
-                                    <thead>
 
-                                    </thead>
-
-                                    <tbody>
-
-                                        <tr>
-                                            <td colspan="12">
-                                                <div>
-                                                    <div class="row">
-                                                        <table class="table table-striped" style="width: 98.65%;
-                                                            margin: -6px 0 -4px 10px;">
-                                                            <thead style="height: 40px;">
-                                                                <tr style="background-color:#FFE0B3 ;">
-                                                                    <th class="text-left vertical-align"
-                                                                        style="vertical-align:middle;">
-                                                                        Stt
-                                                                    </th>
-                                                                    <th class="text-left vertical-align"
-                                                                        style="vertical-align:middle;">
-                                                                        Tên hàng
-                                                                    </th>
-                                                                    <th class="text-left vertical-align"
-                                                                        style="vertical-align:middle;">
-                                                                        Category
-                                                                    </th>
-                                                                    <th class="text-left vertical-align"
-                                                                        style="vertical-align:middle;">
-                                                                        Group
-                                                                    </th>
-                                                                    <th class="text-left vertical-align"
-                                                                        style="vertical-align:middle;">
-                                                                        Function
-                                                                    </th>
-                                                                    <th class="text-left vertical-align"
-                                                                        style="vertical-align:middle;">
-                                                                        Mã hàng
-                                                                    </th>
-                                                                    <th class="text-left vertical-align"
-                                                                        style="vertical-align:middle;">
-                                                                        Giá bán
-                                                                    </th>
-                                                                    <th class="text-left vertical-align"
-                                                                        style="vertical-align:middle;">
-                                                                        SL Combo
-                                                                    </th>
-                                                                </tr>
-                                                            </thead>
-
-                                                            <tbody style="height: 40px;">
-
-                                                                <tr style="background-color: #FFFAF3;">
-                                                                    <td>01</td>
-                                                                    <td>Sữa dê công thức DG</td>
-                                                                    <td>Bé uống</td>
-                                                                    <td>Sữa bột công</td>
-                                                                    <td>Sữa dê</td>
-                                                                    <td>806933</td>
-                                                                    <td>564,000</td>
-                                                                    <td><input type="number" class="" style="border: 1px solid #ccc;
-                                                                            border-radius: 4px;
-                                                                            width: 51px;
-                                                                            height: 27px;"></td>
-                                                                </tr>
-
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-
-
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-
-                    </div>
 
 
                 </div>
@@ -940,8 +915,9 @@
                                     <div class="modal-desr-page6">Vui lòng điền đầy đủ thông tin của BST</div>
                                 </div>
 
-                                <span class="btn-close col-md-1" style="font-size: 24px; cursor: pointer;padding-left: 80;"
-                                    data-dismiss="modal" aria-label="Close">&times;</span>
+                                <span class="btn-close col-md-1"
+                                    style="font-size: 24px; cursor: pointer;padding-left: 80;" data-dismiss="modal"
+                                    aria-label="Close">&times;</span>
                             </div>
                             <div class="modal-body">
 
@@ -1049,8 +1025,169 @@
                         </div>
                     </div>
                 </div>
+                <div class="modal fade" id="modal-add-product" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg"
+                        style="width: 1200px; border-radius: 10px;top: 50% ;transform: translateY(-50%); z-index: 1;"
+                        role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="modal-top">
+                                    <h5 class="modal-title" id="exampleModalLabel">
+                                        Thêm mới sản phẩm
+                                    </h5>
+                                    <p class="modal-desr">
+                                        Sử dụng bộ loc để tìm sản phẩm bạn muốn
+                                    </p>
+                                </div>
+                                <span class="btn-close modal-close btn-close-modal"
+                                    style="font-size: 40px; cursor: pointer" data-dismiss="modal">&times;</span>
+                            </div>
+                            <div class="modal-body">
+                                <div class="modal-input">
+                                    <div class="input-detail">
+                                        <select name="select1" id="select1" style="height: 40px;max-width:280px;"
+                                            class="form-control selectpicker select-option" data-live-search="true">
+                                            <option value="">Chọn category*</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-detail">
+                                        <select name="" id="" class="form-control selectpicker select-option"
+                                            data-live-search="true">
+                                            <option value="">Chọn group*</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-detail">
+                                        <select name="" id="" class="form-control selectpicker select-option"
+                                            data-live-search="true">
+                                            <option value="">Chọn function*</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-detail">
+                                        <select name="" id="" class="form-control selectpicker select-option"
+                                            data-live-search="true">
+                                            <option value="">Chọn brand</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-detail">
+                                        <select name="" id="" class="form-control selectpicker select-option"
+                                            data-live-search="true">
+                                            <option value="">Chọn RR*</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-detail">
+                                        <select name="" id="" class="form-control selectpicker select-option"
+                                            data-live-search="true">
+                                            <option value="">Chọn nguồn nhập</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-detail">
+                                        <select name="" id="" class="form-control selectpicker select-option"
+                                            data-live-search="true">
+                                            <option value="">Chọn mùa vụ</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-detail">
+                                        <button class="btn btn-danger"
+                                            style="width: 100%; height:40px; border-radius: 8px;">
+                                            Áp dụng
+                                        </button>
+                                    </div>
+                                </div>
 
+                                <div class="modal-product">
+                                    <div class="product-fit">
+                                        <h5>Sản phẩm phù hợp</h5>
+                                    </div>
+                                    <div class="product-detail row">
+                                        <div class="detail-info col-lg-6" style="padding: 0;">
+                                            <div class="detail-info-group">
+                                                <div class="product-img col-lg-6">
+                                                    <img src="../Resource/image/milk/milk2.png" alt=""
+                                                        class="img-link" />
+                                                </div>
+                                                <div class="product-card col-lg-6">
+                                                    <div class="card-code">
+                                                        <p class="card-desr ">Mã hàng</p>
+                                                        <p>11100</p>
+                                                    </div>
+                                                    <div class="card-name">
+                                                        <p class="card-desr ">Tên hàng</p>
+                                                        <p>Sữa Aptamil Đức số 3 800g Litva</p>
+                                                    </div>
+                                                    <div class="card-bottom">
+                                                        <div class="card-price">
+                                                            <p class="card-desr ">Giá bán</p>
+                                                            <p>567.000</p>
+                                                        </div>
+                                                        <div class="card-inventory">
+                                                            <p class="card-desr ">Sl tồn</p>
+                                                            <p>100</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-list col-lg-6 row">
+                                            <div class="col-xs-6"></div>
+                                            <div class="swiper mySwiper col-xs-6" style="width: 100%;">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <img src="../Resource/image/milk/milk1.png" alt=""
+                                                            onclick="imgSlider('../Resource/image/milk/milk1.png')" />
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="../Resource/image/milk/milk2.png" alt=""
+                                                            onclick="imgSlider('../Resource/image/milk/milk2.png')" />
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="../Resource/image/milk/milk1.png" alt=""
+                                                            onclick="imgSlider('../Resource/image/milk/milk1.png')" />
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="../Resource/image/milk/milk2.png" alt=""
+                                                            onclick="imgSlider('../Resource/image/milk/milk2.png')" />
+                                                    </div>
 
+                                                </div>
+                                                <div class="swiper-button-next"></div>
+                                                <div class="swiper-button-prev"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-button">
+                                    <button class="btn button-detail button-color">
+                                        Sản phẩm khác
+                                    </button>
+                                    <button class="btn btn-danger button-detail">
+                                        Thêm vào BST
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+                <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+                <script>
+
+                    var swiper = new Swiper(".mySwiper", {
+                        slidesPerView: 4,
+                        spaceBetween: 0,
+                        slidesPerGroup: 1,
+                        loop: true,
+                        loopFillGroupWithBlank: true,
+                        pagination: {
+                            el: ".swiper-pagination",
+                            clickable: true,
+                        },
+                        navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev",
+                        },
+                    });
+                </script>
                 <script>
                     $(function () {
                         $('#txtHead').html("Duyệt bình ổn giá thị trường - Gateway");
@@ -1064,6 +1201,21 @@
                     });
                     function show() {
                         $('#exampleModal1').modal('show');
+                    }
+                    function js_show() {
+                        $("#modal-add-product").modal("show");
+                    }
+
+                    function imgSlider(anything) {
+                        document.querySelector('.img-link').src = anything;
+                    }
+                    document.addEventListener("click", function (event) {
+                        if (event.target.matches('.btn-close-modal')) {
+                            closeModal()
+                        }
+                    })
+                    function closeModal() {
+                        document.querySelector('.modal').style.display = "none"
                     }
                 </script>
 

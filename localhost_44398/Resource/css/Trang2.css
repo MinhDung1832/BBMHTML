@@ -135,7 +135,7 @@
 
 .imgicon {
   width: auto;
-  margin: 30px 0px 0px 55px;
+  padding: 10 10;
 }
 .hiddenRow {
   padding: 0 !important;
