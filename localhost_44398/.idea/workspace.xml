@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7e4a8286-7cf1-4162-b46a-7cea4c6ccf5c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/BoSuuTap/PhieuDeXuat.html" beforeDir="false" afterPath="$PROJECT_DIR$/BoSuuTap/PhieuDeXuat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoSuuTap/detailWork.html" beforeDir="false" afterPath="$PROJECT_DIR$/BoSuuTap/detailWork.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resource/assets/css/detailWork.css" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/assets/css/detailWork.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resource/assets/css/phieudexuat.css" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/assets/css/phieudexuat.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoSuuTap/phieudexuat-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/BoSuuTap/phieudexuat-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resource/assets/css/phieudexuat2.css" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/assets/css/phieudexuat2.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,12 +20,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
