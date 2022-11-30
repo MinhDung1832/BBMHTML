@@ -11,8 +11,10 @@ body{
 }
 
 .search-title {
-    margin: 15px 0 5px 0;
-
+margin: 15px 0 5px 0;
+font-weight: 400;
+letter-spacing: 0.15px;
+color: rgba(0, 0, 0, 0.87);
 font-size: 14px;
 line-height: 24px;
 color: rgba(0, 0, 0, 0.87);
@@ -24,6 +26,7 @@ color: rgba(0, 0, 0, 0.87);
 }
 .top-title {
     flex: 1;
+    font-weight: 700;
     font-size: 20px;
 line-height: 24px;
 color: rgba(0, 0, 0, 0.87);
@@ -46,11 +49,19 @@ line-height: 20px;
     height: 10px;
 }
 input.form-control.type-input{
-    
+    width: 100%!important;
     height: 32px !important;
     border-radius: 8px !important ;
     padding: 0 10px!important;
     margin-right: 10px!important;
+}
+input.form-control.table-input{
+    width: 100%!important;
+    height: 32px !important;
+    border-radius: 8px !important ;
+    padding: 0 10px!important;
+    margin-right: 10px!important;
+    min-width: 120px !important;
 }
 .col-md-1{
     padding-left: 0 !important;
@@ -58,9 +69,12 @@ input.form-control.type-input{
 .col-md-2 {
     padding-left: 0!important;
 }
-
+.dropdown.bootstrap-select.form-control.bs3 {
+    width: 100%!important;
+    max-width: none;
+}
 button.btn.dropdown-toggle.btn-default.bs-placeholder[aria-owns='bs-select-1'] {
-    width: 410px !important;
+    width: 100%!important;
     
     border-radius: 8px !important;
 }
@@ -132,10 +146,7 @@ color: #fff;
     height:74px;
 }
 .icon-delete_img {
-   
-    padding-top: 28px;
     cursor: pointer;
-
 }
 .offer-table {
     padding: 15px;
@@ -158,7 +169,10 @@ color: #000000;
 .table-title.small {
     font-weight: 400;
 }
-
+.table-title.action {
+    align-items: center;
+    width: 50px!important;
+}
 td.table-input {
 font-weight: 590;
 font-size: 14px;
@@ -166,17 +180,17 @@ line-height: 24px;
 letter-spacing: 0.15px;
 color: #000000;
 }
-td, th {
+td{
     padding: 5px 20px!important;
-    width: 240px!important;
+    /* width: 240px!important; */
 }
 td.size {
     width: 250px!important;
 }
 td.table-delete {
-    width: 30px!important;
-    padding: 0!important;
-   
+    /* width: auto!important;
+     */
+     padding: 0!important;
 }
 tr.hide-row{
     display: none;

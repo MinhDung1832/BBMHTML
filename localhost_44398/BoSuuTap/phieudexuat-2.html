@@ -14,6 +14,7 @@
     <link href="../Resource/assets/vendors/jvectormap/jquery-jvectormap-2.0.3.css" rel="stylesheet" />
     <link href="../Resource/assets/css/main.min.css" rel="stylesheet" />
     <link href="../Resource/assets/css/phieudexuat.css" rel="stylesheet" />
+    <link href="../Resource/assets/css/phieudexuat2.css" rel="stylesheet" />
 
     <link href="../Resource/css/site_V2.css" rel="stylesheet" />
 
@@ -144,29 +145,14 @@
                     <div class="offer-top">
                         <div class="top-detail ">
                             <h5 class="top-title">
-                                Tạo phiếu đề xuất
+                                Phiếu đề xuất
                             </h5>
                             <div class="top-desr">
-                                Vui lòng khai báo đầy đủ nguyên phụ liệu của đơn hàng
+                                Chờ duyệt
                             </div>
                         </div>
                         <div class="top-upload">
-                            <div class="Upload_img">
-                                <input class="form-control" type="hidden" id="imgLink">
-                                <div id="wp_thum_img" onclick="reupimg()" style="display: flex; justify-content: center;;text-align:center; width:160px; height:46px;border: 1px solid rgba(0, 0, 0, 0.38);border-radius: 4px;">
-                                    <div class="img_src" style="cursor:pointer; display: flex;justify-content: center; align-items: center;">
-                                        <img id="thum_img" for="fileUpload" src="../Resource/images/buttons/ant-design_cloud-upload-outlined.png" style="width: 40px; opacity: 0.4; margin-right: 10px;" />
-                                        <div id="upload_theme">
-                                            <p style ="margin: 0;">Up ảnh</p>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                                <form id="upload" enctype="multipart/form-data" action="@Url.Action("uploadImg", "Po")" method="POST" style="display:none">
-                                    <input type="file" style="width: 0.1px;height: 0.1px;opacity: 0;overflow: hidden;position: absolute;z-index: -1;" name="fileUpload" id="fileUpload" class="inputfile">
-                                    <label class="btn btn-success" for="fileUpload" style="width:100%;margin: 10px 0px;font-size:12px"><i class="fa fa-upload" aria-hidden="true"></i>upload</label>
-                                </form>
-                            </div>
+                            <button class="upload-submit">✓ Hoàn thành</button>
                             <img class="upload-pgup" src="../Resource/images/buttons/pgUp.jpg" alt="">
                         </div>
                     </div>
@@ -174,26 +160,20 @@
                 <div class="from-control">
                     <div class="offer-search">
                         <div class="col-md-3 search-detail">
-                        <div class="search-title">Tên đơn hàng</div>
-                        <input name="" id="" class="form-control type-input" data-live-search="true">
+                            <div class="search-title">Tên đơn hàng</div>
+                            <p class="detail-desr">121212</p>
                         </div>
                         <div class="col-md-3 search-detail">
                             <div class="search-title">Bộ phận</div>
-                            <select id="TrangThai" class="form-control selectpicker" data-live-search="true" onchange="js_searchbox();">
-                                <option value="">-- Chọn bộ phận -- </option>
-                                <option value="0">San xuat</option>
-                                <option value="1">Van Hanh</option>
-                                <option value="2">Quan ly</option>
-                            </select>
+                            <p class="detail-desr">Sản xuất</p>
                         </div>
                         <div class="col-md-3 search-detail">
                             <div class="search-title">Người đề xuất</div>
-                        <input name="" id="" class="form-control type-input" data-live-search="true">
-
+                            <p class="detail-desr">Hoàng Thị Hương</p>
                         </div>
                         <div class="col-md-3 search-detail">
                             <div class="search-title">Tên hàng</div>
-                             <input name="" id="" class="form-control type-input" data-live-search="true">
+                             <p class="detail-desr">Bộ sơ sinh CG DT Bibos WBB</p>
 
                         </div>
                     </div>
@@ -203,13 +183,12 @@
                             <h5 class="top-title">
                                 Nguyên vật liệu 
                             </h5>
-                        <div class="body-add" >
-                            <div class="add-title">Thêm mới</div>
-                            <button class="add-icon" id="add-row">+</button>
-                        </div>
+                            <div class="body-add" >
+                                <div class="add-title">Thêm mới</div>
+                                <button class="add-icon" id="add-row">+</button>
+                            </div>
                     </div>
                 </div>
-                
                 <div class="offer-table table-responsive">
                     <table class="" id="tables" style="border-spacing: 20px;">
                         <tbody>
@@ -260,9 +239,261 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="col-md-12 form-footer">
-                    <button class="btn-create" >Tạo lệnh</button>
+                
+            </div>
+            <h5 class="top-title" style="margin:20px 0 20px 76px; padding-left: 0;">Bảng giá cost tạm tính</h5>
+            
+            <div class="panel content-offer" style="margin-left: 76px; padding-left: 0;">
+                <div class="row ContainerCTBST" style="padding: 15px 0 0px 6px;">
+                    <div class="col-md-10">
+                        <Strong class="TitleBST">Áo SS CG DT BG Bibos C30 in tràn WBB hồng</Strong>
+                    </div>
                 </div>
+                <div class="row ">
+
+                    <div class="col-md-6">
+                        <div class="col-md-3" style="margin: 15 0 0 -5;">
+                            <span class="TitleName row">Giá gia công</span>
+                            <span class="TitleText row">0.17</span>
+                        </div>
+                        <div class="col-md-3 layoutBST">
+                            <span class="TitleName row">Cúc cài</span>
+                            <span class="TitleText row">3.6</span>
+                        </div>
+                        <div class="col-md-3 layoutBST">
+                            <span class="TitleName row">Mex </span>
+                            <span class="TitleText row">210,000</span>
+                        </div>
+                        <div class="col-md-3 layoutBST">
+                            <span class="TitleName row">Chun</span>
+                            <span class="TitleText row">9,917</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="col-md-3 layoutBST">
+                            <span class="TitleName row">Mác ép nhiệt</span>
+                            <span class="TitleText row">292.85</span>
+                        </div>
+                        <div class="col-md-3 layoutBST">
+                            <span class="TitleName row">Thẻ bài</span>
+                            <span class="TitleText row">6,080</span>
+                        </div>
+                        <div class="col-md-3 layoutBST">
+                            <span class="TitleName row">Tem giá</span>
+                            <span class="TitleText row">0.17</span>
+                        </div>
+                        <div class="col-md-3 layoutBST">
+                            <span class="TitleName row">Giá cost</span>
+                            <span class="TitleText row">22,852 </span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row ">
+                    <div class="col-md-6">
+                        <div class="col-md-3" style="margin: 15 0 0 -5;">
+                            <span class="TitleName row">Giá cost 9(VAT)</span>
+                            <span class="TitleText row">24,6800</span>
+                        </div>
+                        <div class="col-md-3 layoutBST">
+                            <span class="TitleName row">Giá niêm yết</span>
+                            <span class="TitleText row">49,000</span>
+                        </div>
+                        <div class="col-md-3 layoutBST">
+                            <span class="TitleName row">% GP </span>
+                            <span class="TitleText row">50</span>
+                        </div>
+                        <div class="col-md-3 layoutBST">
+                            <span class="TitleName row">Giá bán Bibos</span>
+                            <span class="TitleText row">29,610</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="col-md-3 layoutBST">
+                            <span class="TitleName row">% GP</span>
+                            <span class="TitleText row">10</span>
+                        </div>
+                        <div class="col-md-3 layoutBST">
+                            <span class="TitleName row">Giá bán lẻ</span>
+                            <span class="TitleText row">6,080</span>
+                        </div>
+                        <div class="col-md-3 layoutBST">
+                            <span class="TitleName row">% GP</span>
+                            <span class="TitleText row">40</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="cardTbl">
+                    <div class="table-responsive">
+                        <table class="table table-hover" style="margin: 10px 0px 10px 14px;">
+                            <thead style="height: 30px;">
+                                <tr>
+                                    <th class="textTblBST">Tên hàng hóa</th>
+                                    <th class="textTblBST">Định mức (m)</th>
+                                    <th class="textTblBST">Quy đổi m/kg</th>
+                                    <th class="textTblBST">Tiền vải</th>
+                                    <th class="textTblBST">Tiền vải/sp</th>
+                                    <th class="textTblBST">Tổng TL</th>
+                                    <th class="textTblBST">Số lượng sx</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="textRowTblBST">Vải chính C30 in tràn hồng</td>
+                                    <td class="textRowTblBST">0.17</td>
+                                    <td class="textRowTblBST">3.6</td>
+                                    <td class="textRowTblBST">210,000</td>
+                                    <td class="textRowTblBST">9,917</td>
+                                    <td class="textRowTblBST">292.85</td>
+                                    <td class="textRowTblBST">6,080</td>
+
+                                </tr>
+                                <tr>
+                                    <td class="textRowTblBST">Vải chính C30 in tràn hồng</td>
+                                    <td class="textRowTblBST">0.17</td>
+                                    <td class="textRowTblBST">3.6</td>
+                                    <td class="textRowTblBST">210,000</td>
+                                    <td class="textRowTblBST">9,917</td>
+                                    <td class="textRowTblBST">292.85</td>
+                                    <td class="textRowTblBST">6,080</td>
+
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="panel content-offer" style="margin-left: 76px; padding-left: 0;">
+                <div class="row ContainerCTBST" style="padding: 15px 0 0px 6px;">
+                    <div class="col-md-10">
+                        <Strong class="TitleBST">Áo SS CG DT BG Bibos C30 in tràn WBB hồng</Strong>
+                    </div>
+                </div>
+                <div class="row ">
+
+                    <div class="col-md-6">
+                        <div class="col-md-3" style="margin: 15 0 0 -5;">
+                            <span class="TitleName row">Giá gia công</span>
+                            <span class="TitleText row">0.17</span>
+                        </div>
+                        <div class="col-md-3 layoutBST">
+                            <span class="TitleName row">Cúc cài</span>
+                            <span class="TitleText row">3.6</span>
+                        </div>
+                        <div class="col-md-3 layoutBST">
+                            <span class="TitleName row">Mex </span>
+                            <span class="TitleText row">210,000</span>
+                        </div>
+                        <div class="col-md-3 layoutBST">
+                            <span class="TitleName row">Chun</span>
+                            <span class="TitleText row">9,917</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="col-md-3 layoutBST">
+                            <span class="TitleName row">Mác ép nhiệt</span>
+                            <span class="TitleText row">292.85</span>
+                        </div>
+                        <div class="col-md-3 layoutBST">
+                            <span class="TitleName row">Thẻ bài</span>
+                            <span class="TitleText row">6,080</span>
+                        </div>
+                        <div class="col-md-3 layoutBST">
+                            <span class="TitleName row">Tem giá</span>
+                            <span class="TitleText row">0.17</span>
+                        </div>
+                        <div class="col-md-3 layoutBST">
+                            <span class="TitleName row">Giá cost</span>
+                            <span class="TitleText row">22,852 </span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row ">
+                    <div class="col-md-6">
+                        <div class="col-md-3" style="margin: 15 0 0 -5;">
+                            <span class="TitleName row">Giá cost 9(VAT)</span>
+                            <span class="TitleText row">24,6800</span>
+                        </div>
+                        <div class="col-md-3 layoutBST">
+                            <span class="TitleName row">Giá niêm yết</span>
+                            <span class="TitleText row">49,000</span>
+                        </div>
+                        <div class="col-md-3 layoutBST">
+                            <span class="TitleName row">% GP </span>
+                            <span class="TitleText row">50</span>
+                        </div>
+                        <div class="col-md-3 layoutBST">
+                            <span class="TitleName row">Giá bán Bibos</span>
+                            <span class="TitleText row">29,610</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="col-md-3 layoutBST">
+                            <span class="TitleName row">% GP</span>
+                            <span class="TitleText row">10</span>
+                        </div>
+                        <div class="col-md-3 layoutBST">
+                            <span class="TitleName row">Giá bán lẻ</span>
+                            <span class="TitleText row">6,080</span>
+                        </div>
+                        <div class="col-md-3 layoutBST">
+                            <span class="TitleName row">% GP</span>
+                            <span class="TitleText row">40</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class=" cardTbl">
+                    <div class="table-responsive">
+                        <table class="table table-hover" style="margin: 10px 0px 10px 14px;">
+                            <thead style="height: 30px;">
+                                <tr>
+                                    <th class="textTblBST">Tên hàng hóa</th>
+                                    <th class="textTblBST">Định mức (m)</th>
+                                    <th class="textTblBST">Quy đổi m/kg</th>
+                                    <th class="textTblBST">Tiền vải</th>
+                                    <th class="textTblBST">Tiền vải/sp</th>
+                                    <th class="textTblBST">Tổng TL</th>
+                                    <th class="textTblBST">Số lượng sx</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="textRowTblBST">Vải chính C30 in tràn hồng</td>
+                                    <td class="textRowTblBST">0.17</td>
+                                    <td class="textRowTblBST">3.6</td>
+                                    <td class="textRowTblBST">210,000</td>
+                                    <td class="textRowTblBST">9,917</td>
+                                    <td class="textRowTblBST">292.85</td>
+                                    <td class="textRowTblBST">6,080</td>
+
+                                </tr>
+                                <tr>
+                                    <td class="textRowTblBST">Vải chính C30 in tràn hồng</td>
+                                    <td class="textRowTblBST">0.17</td>
+                                    <td class="textRowTblBST">3.6</td>
+                                    <td class="textRowTblBST">210,000</td>
+                                    <td class="textRowTblBST">9,917</td>
+                                    <td class="textRowTblBST">292.85</td>
+                                    <td class="textRowTblBST">6,080</td>
+
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+           
+    </div>
+            <div class="content-offer" style="margin-left: 76px; padding-left: 0;">
+                
+                
             </div>
 
         
@@ -280,11 +511,12 @@
     function opennewtab(url) {
         window.open(url, "_blank");
     }
-
     $(document).ready(function(){
         
         $('#add-row').click(function(){
             $('#tables tbody tr').last().after(
+                
+                          
                             '<tr onclick ="myRow(this)">'+
                             
                             '<td>'+
@@ -363,8 +595,8 @@
                                 '<div class="table-title">Ghi chú</div>'+
                                 '<input name="" id="" class="form-control type-input " data-live-search="true">'+
                             '</td>'+
-                            '<td class="table-delete " id="delete-row">'+
-                                '<div class="table-title action" style="color: #fff;">Action</div>'+          
+                            '<td class="table-delete" id="delete-row">'+
+                                '<div></div>'+          
                                 '<img src="../Resource/images/buttons/delete.png" class="icon-delete_img" id="delete-row" alt="">'+
                             '</td>'+
                        ' </tr>'
@@ -379,6 +611,7 @@
     }
     
 
+    
 
     function UploadFile() {
         var data = new FormData();
