@@ -1,13 +1,15 @@
+
+body{
+    font-family: 'SF Pro' !important;
+    min-width: 100%;    
+}
 .content-offer {
-    background-color: #fff;
+    background-color: #fff !important;
     margin: 10px 20px 0 76px;
     border-radius: 8px; 
-    height: 90%;
-    /* overflow: scroll; */
+    height: auto;
 }
-.offer-search {
-    
-}
+
 .search-title {
     margin: 15px 0 5px 0;
 
@@ -44,9 +46,11 @@ line-height: 20px;
     height: 10px;
 }
 input.form-control.type-input{
-    height: 32px;
+    
+    height: 32px !important;
     border-radius: 8px !important ;
-    padding: 0!important;
+    padding: 0 10px!important;
+    margin-right: 10px!important;
 }
 .col-md-1{
     padding-left: 0 !important;
@@ -54,8 +58,16 @@ input.form-control.type-input{
 .col-md-2 {
     padding-left: 0!important;
 }
+
+button.btn.dropdown-toggle.btn-default.bs-placeholder[aria-owns='bs-select-1'] {
+    width: 410px !important;
+    
+    border-radius: 8px !important;
+}
 button.btn.dropdown-toggle.btn-default.bs-placeholder {
     border-radius: 8px !important;
+    width: 300px!important;
+    height: 32px !important;;
 }
 .offer-body {
     display: flex;
@@ -64,6 +76,27 @@ button.btn.dropdown-toggle.btn-default.bs-placeholder {
 }
 .body-add {
     float: right;
+    display: flex;
+    align-items: center;
+}
+.add-title {
+    font-weight: 590;
+    font-size: 14px;
+    line-height: 24px;
+    
+    letter-spacing: 0.15px;
+    margin-right: 10px; 
+    color: rgba(0, 0, 0, 0.6);
+}
+.add-icon {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    background: rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 .search-title.bold {
 font-size: 12px;
@@ -87,4 +120,64 @@ outline: none;
 background: #D2151E;
 border-radius: 8px;
 color: #fff;
+}
+.note {
+    width: 120px !important;
+}
+.icon-delete {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    height:74px;
+}
+.icon-delete_img {
+   
+    padding-top: 28px;
+    cursor: pointer;
+
+}
+.offer-table {
+    padding: 15px;
+}
+
+.table-select {
+    width: 280px;
+    
+}
+.table-title {
+    margin-bottom: 10px;
+    font-weight: 700;
+font-size: 14px;
+line-height: 24px;
+
+letter-spacing: 0.15px;
+
+color: #000000;
+}
+.table-title.small {
+    font-weight: 400;
+}
+
+td.table-input {
+font-weight: 590;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.15px;
+color: #000000;
+}
+td, th {
+    padding: 5px 20px!important;
+    width: 240px!important;
+}
+td.size {
+    width: 250px!important;
+}
+td.table-delete {
+    width: 30px!important;
+    padding: 0!important;
+   
+}
+tr.hide-row{
+    display: none;
 }
