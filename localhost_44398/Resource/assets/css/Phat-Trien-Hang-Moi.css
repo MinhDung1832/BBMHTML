@@ -217,10 +217,6 @@
     margin-right: 20px !important;
   }
 
-  .button.btn.dropdown-toggle.btn-default.bs-placeholder {
-    border: none;
-  }
-
   .filter-option-inner-inner {
     font-family: 'SF Pro';
     font-style: normal;
@@ -299,9 +295,14 @@
     margin: 20px 30px 20px 86px;
     display: flex;
   }
+<<<<<<< Updated upstream
   button.btn.dropdown-toggle.btn-default.bs-placeholder {
     border: none !important
   }
+=======
+
+
+>>>>>>> Stashed changes
   button.btn.dropdown-toggle.btn-default.bs-placeholder:hover {
     background-color: #fff !important
   }
